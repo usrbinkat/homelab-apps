@@ -17,3 +17,6 @@ Features:
   - 6x HGST WD Ultrastar 10T
 
 ![screenshot](./img/screenshot.png)
+
+### FreeIPA WebUI
+![screenshot](./img/freeipa.png)

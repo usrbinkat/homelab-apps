@@ -1,0 +1,127 @@
+apiVersion: kubevirt.io/v1
+kind: VirtualMachine
+metadata:
+  name: freeipa
+  labels:
+    app: kargo
+spec:
+  dataVolumeTemplates:
+  - metadata:
+      name: freeipa-volume-vda-root
+    spec:
+      pvc:
+        accessModes:
+        - ReadWriteOnce
+        resources:
+          limits:
+            storage: 32G
+          requests:
+            storage: 32G
+        storageClassName: microk8s-hostpath
+      source:
+        registry:
+          url: docker://docker.io/containercraft/fedora:latest
+  running: true
+  template:
+    spec:
+      domain:
+        cpu:
+          cores: 1
+          model: host-passthrough
+          sockets: 1
+          threads: 6
+        resources:
+          limits:
+            memory: 8G
+          requests:
+            devices.kubevirt.io/kvm: "1"
+            memory: 8G
+        clock:
+          timer: {}
+          utc: {}
+        machine:
+          type: q35
+        devices:
+          rng: {}
+          autoattachGraphicsDevice: true
+          autoattachPodInterface: false
+          autoattachSerialConsole: true
+          networkInterfaceMultiqueue: false
+          disks:
+          - bootOrder: 1
+            disk:
+              bus: virtio
+            name: freeipa-disk-vda-root
+          - disk:
+              bus: virtio
+            name: cloudinitdisk
+          interfaces:
+          - bridge: {}
+            model: virtio
+            name: enp1s0
+      networks:
+      - multus:
+          networkName: nadbr0
+        name: enp1s0
+      terminationGracePeriodSeconds: 0
+      accessCredentials:
+      - sshPublicKey:
+          propagationMethod:
+            qemuGuestAgent:
+              users:
+              - kc2user
+          source:
+            secret:
+              secretName: kargo-sshpubkey-kc2user
+      volumes:
+      - name: freeipa-disk-vda-root
+        dataVolume:
+          name: freeipa-volume-vda-root
+      - name: cloudinitdisk
+        cloudInitNoCloud:
+          networkData: |
+            version: 2
+            ethernets:
+              enp1s0:
+                dhcp4: true
+                dhcp6: true
+                dhcp-identifier: mac
+          userData: |
+            #cloud-config
+            hostname: freeipa
+            ssh_pwauth: true
+            disable_root: true
+            chpasswd:
+              list: |
+                kc2user:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              expire: False
+            users:
+              - name: kc2user
+                shell: /bin/bash
+                lock_passwd: false
+                sudo: ['ALL=(ALL) NOPASSWD:ALL']
+                groups: sudo,libvirt,xrdp,docker,ssl-cert
+            growpart:
+              mode: auto
+              devices: ['/']
+              ignore_growroot_disabled: true
+            package_upgrade: true
+            packages:
+              - "freeipa-server"
+              - "freeipa-server-dns"
+              - "qemu-guest-agent"
+              - "screenfetch"
+              - "vim"
+            runcmd:
+              - "mkdir -p /home/kc2user/.ssh"
+              - "chown -R kc2user:kc2user /home/kc2user/.ssh"
+              - "mkdir -p /home/kc2user/.kube"
+              - "chown -R kc2user:kc2user /home/kc2user/.kube"
+              - "systemctl enable --now qemu-guest-agent"
+              - "systemctl restart qemu-guest-agent"
+              - "dnf remove -y pcsc-lite"
+              - "systemctl stop firewalld"
+              - "systemctl disable firewalld"
+              - "screenfetch"
+              - "/bin/fedora-third-party enable"
+              - "touch /.autorelabel"

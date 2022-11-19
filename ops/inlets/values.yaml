@@ -1,0 +1,23 @@
+## Add and update the inlets-operator helm repo
+#  - helm repo add inlets https://inlets.github.io/inlets-operator/ && helm repo update
+
+## Create the Custom Resource Definition for a "Tunnel"
+#  - kubectl apply -f https://raw.githubusercontent.com/inlets/inlets-operator/master/artifacts/crds/inlets.inlets.dev_tunnels.yaml
+
+## Create Namespace
+#  - kubectl create namespace inlets
+
+## Create a secret to store the service account key file
+#  - kubectl create secret generic inlets-access-key --namespace inlets --from-file=inlets-access-key=$HOME/.inlets/access-token --dry-run=client -oyaml | kubectl apply -f -
+
+## Install inlets-operator with the required fields
+#  - helm upgrade --install inlets-operator inlets/inlets-operator --create-namespace --namespace inlets --values ./values.yaml
+
+provider: digitalocean
+region: sfo3
+accessKeyFile: /var/secrets/inlets/inlets-access-key
+annotatedOnly: true
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi

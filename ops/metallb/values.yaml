@@ -1,0 +1,16 @@
+#  - helm repo add metallb https://metallb.github.io/metallb && helm repo update
+#  - helm upgrade --install metallb metallb/metallb --create-namespace --namespace metallb --values ./values.yaml
+#loadBalancerClass: "metallb"
+
+controller:
+  enabled: true
+  logLevel: info
+
+speaker:
+  enabled: true
+  logLevel: info
+  tolerateMaster: true
+
+crds:
+  enabled: true
+  validationFailurePolicy: Fail

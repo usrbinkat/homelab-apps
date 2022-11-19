@@ -1,0 +1,82 @@
+apiVersion: kubevirt.io/v1
+kind: VirtualMachine
+metadata:
+  name: opnsense-serial
+  labels:
+    app: opnsense
+spec:
+  dataVolumeTemplates:
+  - metadata:
+      name: opnsense-serial-volume-vda-root
+    spec:
+      pvc:
+        accessModes:
+        - ReadWriteOnce
+        resources:
+          requests:
+            storage: 32G
+      source:
+        blank: {}
+  running: true
+  template:
+    spec:
+      domain:
+        clock:
+          timer: {}
+          utc: {}
+        cpu:
+          model: host-passthrough
+          threads: 6
+        devices:
+          rng: {}
+          autoattachGraphicsDevice: false
+          autoattachPodInterface: false
+          autoattachSerialConsole: true
+          disks:
+          - name: opnsense-serial-disk-vda-root
+            bootOrder: 1
+            disk:
+              bus: virtio
+          - name: iso
+            bootOrder: 2
+            disk:
+              bus: sata
+          interfaces:
+          - bridge: {}
+            model: virtio
+            name: enp1s0
+          - bridge: {}
+            model: virtio
+            name: enp2s0
+        features:
+          acpi:
+            enabled: true
+          smm:
+            enabled: true
+        firmware:
+          bootloader:
+            efi:
+              secureBoot: false
+        machine:
+          type: q35
+        resources:
+          requests:
+            devices.kubevirt.io/kvm: "1"
+            memory: 4G
+      hostname: opnsense
+      networks:
+      - name: enp1s0
+        multus:
+          networkName: nadbr0
+      - name: enp2s0
+        multus:
+          networkName: nadbr0
+      terminationGracePeriodSeconds: 0
+      volumes:
+      - name: opnsense-serial-disk-vda-root
+        dataVolume:
+          name: opnsense-serial-volume-vda-root
+      - name: iso
+        containerDisk:
+          image: docker.io/containercraft/opnsense:22.1.2-iso
+          imagePullPolicy: IfNotPresent

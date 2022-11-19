@@ -1,0 +1,95 @@
+## External database configuration
+externalDatabase:
+  enabled: true
+  type: postgresql
+  host: postgres-nextcloud-rw.nextcloud.svc.cluster.local
+  database: app
+  existingSecret:
+    enabled: true
+    secretName: postgres-nextcloud-app
+    usernameKey: username
+    passwordKey: password
+
+## Redis chart configuration
+## for more options see https://github.com/bitnami/charts/tree/master/bitnami/redis
+redis:
+  enabled: false
+  auth:
+    enabled: false
+    password: 'changeme'
+  replica:
+    replicaCount: 0
+
+# NextCloud Config
+replicaCount: 1
+nextcloud:
+  host: drive.braincraft.io
+  existingSecret:
+    enabled: true
+    secretName: nextcloud-admin-credentials
+    usernameKey: username
+    passwordKey: password
+    # tokenKey: serverinfo_token
+    # smtpUsernameKey: smtp_username
+    # smtpPasswordKey: smtp_password
+  datadir: /var/www/html/data
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+
+  # Extra sidecar containers.
+  extraSidecarContainers: []
+  #  - name: nextcloud-logger
+  #    image: busybox
+  #    command: [/bin/sh, -c, 'while ! test -f "/run/nextcloud/data/nextcloud.log"; do sleep 1; done; tail -n+1 -f /run/nextcloud/data/nextcloud.log']
+  #    volumeMounts:
+  #    - name: nextcloud-data
+  #      mountPath: /run/nextcloud/data
+
+## Cronjob to execute Nextcloud background tasks
+## ref: https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/background_jobs_configuration.html#cron
+cronjob:
+  enabled: false
+
+# Nextcloud Data (/var/www/html)
+persistence:
+  enabled: true
+  existingClaim: nextcloud
+  # Nextcloud Data (/var/www/html/data)
+  nextcloudData:
+    enabled: true
+    existingClaim: nextcloud-data
+
+## Enable pod autoscaling using HorizontalPodAutoscaler
+## ref: https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/
+hpa:
+  enabled: false
+  cputhreshold: 60
+  minPods: 1
+  maxPods: 10
+
+rbac:
+  enabled: false
+  serviceaccount:
+    create: true
+    name: nextcloud-serviceaccount
+    annotations: {}
+
+ingress:
+  enabled: true
+  className: public
+  path: /
+  pathType: Prefix
+  tls:
+    - secretName: nextcloud-tls
+      hosts:
+        - drive.braincraft.io
+
+## Internal database configuration
+internalDatabase:
+  enabled: false
+## PostgreSQL chart configuration
+postgresql:
+  enabled: false

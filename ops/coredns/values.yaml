@@ -1,0 +1,93 @@
+# helm upgrade --install coredns coredns/coredns --create-namespace --namespace coredns --values ./values.yaml
+
+customAnnotations: {}
+customLabels: {}
+deployment:
+  annotations:
+    dev.inlets.manage: "false"
+    metallb.universe.tf/address-pool: "default"
+  enabled: true
+  name: ""
+extraVolumeMounts: []
+extraVolumes: []
+image:
+  pullPolicy: IfNotPresent
+  repository: coredns/coredns
+  tag: latest
+isClusterService: false
+podAnnotations: {}
+replicaCount: 2
+resources:
+  limits:
+    cpu: 200m
+    memory: 512Mi
+  requests:
+    cpu: 200m
+    memory: 512Mi
+servers:
+- plugins:
+  - name: forward
+    parameters: . tls://1.1.1.3 tls://1.0.0.3 { tls_servername family.cloudflare-dns.com }
+  - name: cache
+    parameters: 30
+  - name: loop
+  - name: ready
+  - name: errors
+  - name: reload
+  - name: loadbalance
+  - configBlock: lameduck 5s
+    name: health
+  - name: prometheus
+    parameters: 0.0.0.0:9153
+  - name: file
+    parameters: /etc/coredns/home.arpa.db home.arpa
+# - name: file
+#   parameters: /etc/coredns/containercraft.io.db containercraft.io
+  port: 53
+  zones:
+  - scheme: dns://
+    use_tcp: true
+    zone: .
+service:
+  annotations:
+    dev.inlets.manage: "false"
+    metallb.universe.tf/address-pool: "default"
+  loadBalancerIP: 192.168.1.23
+  name: ""
+serviceType: LoadBalancer
+terminationGracePeriodSeconds: 3
+zoneFiles:
+
+- domain: home.arpa
+  filename: home.arpa.db
+  contents: |
+    home.arpa.            IN SOA sns.dns.icann.com. noc.dns.icann.com. 2015082541 7200 3600 1209600 3600
+    _kerberos-master._tcp.home.arpa. 3600 IN SRV 0 100 88 idm.home.arpa.
+    _kerberos-master._udp.home.arpa. 3600 IN SRV 0 100 88 idm.home.arpa.
+    _kerberos._tcp.home.arpa. 3600 IN SRV 0 100 88 idm.home.arpa.
+    _kerberos._udp.home.arpa. 3600 IN SRV 0 100 88 idm.home.arpa.
+    _kerberos.home.arpa. 3600 IN TXT "HOME.ARPA"
+    _kerberos.home.arpa. 3600 IN URI 0 100 "krb5srv:m:tcp:idm.home.arpa."
+    _kerberos.home.arpa. 3600 IN URI 0 100 "krb5srv:m:udp:idm.home.arpa."
+    _kpasswd._tcp.home.arpa. 3600 IN SRV 0 100 464 idm.home.arpa.
+    _kpasswd._udp.home.arpa. 3600 IN SRV 0 100 464 idm.home.arpa.
+    _kpasswd.home.arpa. 3600 IN URI 0 100 "krb5srv:m:tcp:idm.home.arpa."
+    _kpasswd.home.arpa. 3600 IN URI 0 100 "krb5srv:m:udp:idm.home.arpa."
+    _ldap._tcp.home.arpa. 3600 IN SRV 0 100 389 idm.home.arpa.
+    studio.home.arpa.     IN A   192.168.1.98
+    fedora.home.arpa.     IN A   192.168.1.97
+    opti.home.arpa.       IN A   192.168.1.30
+    mordor.home.arpa.     IN A   192.168.1.21
+    idm.home.arpa.        IN A   192.168.1.9
+    truenas.home.arpa.    IN A   192.168.1.8
+    gateway.home.arpa.    IN A   192.168.1.1
+
+# contents: |
+#   containercraft.io.        IN SOA sns.dns.icann.com. noc.dns.icann.com. 2015082541 7200 3600 1209600 3600
+#   _minecraft._tcp.play.containercraft.io. 30 IN SRV 1 10 32609 mc.containercraft.io.
+#   mc.containercraft.io.   IN A   192.168.1.21
+#   #mc.containercraft.io.   IN SOA sns.dns.icann.com. noc.dns.icann.com. 2015082541 7200 3600 1209600 3600
+#   #mc.containercraft.io.   IN NS  b.iana-servers.net.
+#   #mc.containercraft.io.   IN NS  a.iana-servers.net.
+# domain: containercraft.io
+# filename: containercraft.io.db

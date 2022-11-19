@@ -1,0 +1,29 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: blocky
+  namespace: dns
+  annotations:
+    meta.helm.sh/release-name: blocky
+    meta.helm.sh/release-namespace: dns
+    dev.inlets.manager: "false"
+    metallb.universe.tf/address-pool: default
+  labels:
+    app.kubernetes.io/instance: blocky
+    app.kubernetes.io/name: blocky
+spec:
+  type: LoadBalancer
+  allocateLoadBalancerNodePorts: true
+  selector:
+    app.kubernetes.io/instance: blocky
+    app.kubernetes.io/name: blocky
+  ports:
+  - name: dnstcp
+    port: 53
+    protocol: TCP
+    targetPort: 53
+  - name: dnsudp
+    port: 53
+    protocol: UDP
+    targetPort: 53

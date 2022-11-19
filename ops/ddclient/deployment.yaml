@@ -1,0 +1,95 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: ddclient-opendns.conf
+  namespace: ddclient
+  labels:
+    app: ddclient-opendns
+stringData:
+  ddclient.conf: |
+    protocol=dyndns2
+    use=web, web=myip.dnsomatic.com
+    ssl=yes
+    server=updates.dnsomatic.com
+    login='xxxxxxxxxxxxxx@braincraft.io'
+    password='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+    home.usrbinkat.io
+#---
+#apiVersion: v1
+#kind: Secret
+#metadata:
+#  name: ddclient-opendns-settings
+#  namespace: ddclient
+#  labels:
+#    app: ddclient-opendns-settings
+#stringData:
+#  ddclient.conf: |
+#    #Configuration for ddclient scripts 
+#    # generated from debconf on Sun Jun 24 00:08:13 EDT 2018
+#    #
+#    # /etc/default/ddclient
+#    
+#    # Set to "true" if ddclient should be run every time DHCP client ('dhclient'
+#    # from package isc-dhcp-client) updates the systems IP address.
+#    run_dhclient="false"
+#    
+#    # Set to "true" if ddclient should be run every time a new ppp connection is 
+#    # established. This might be useful, if you are using dial-on-demand.
+#    run_ipup="false"
+#    
+#    # Set to "true" if ddclient should run in daemon mode
+#    # If this is changed to true, run_ipup and run_dhclient must be set to false.
+#    run_daemon="true"
+#    
+#    # Set the time interval between the updates of the dynamic DNS name in seconds.
+#    # This option only takes effect if the ddclient runs in daemon mode.
+#    daemon_interval="300"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ddclient-opendns
+  namespace: ddclient
+  labels:
+    app: ddclient-opendns
+spec:
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ddclient-opendns
+  template:
+    metadata:
+      labels:
+        app: ddclient-opendns
+    spec:
+      containers:
+        - name: ddclient
+          image: linuxserver/ddclient
+          imagePullPolicy: Always
+          securityContext:
+             privileged: true
+          volumeMounts:
+            - mountPath: /config
+              name: ddclient-opendns-conf
+#            - mountPath: /etc/default/ddclient
+#              name: ddclient-opendns-settings
+          resources:
+            requests:
+              cpu: 10m
+              memory: 64Mi
+            limits:
+              cpu: 50m
+              memory: 128Mi
+      volumes:
+        - name: ddclient-opendns-conf
+          secret:
+            secretName: ddclient-opendns.conf
+#       - name: ddclient-opendns-settings
+#         secret:
+#           secretName: ddclient-opendns-settings

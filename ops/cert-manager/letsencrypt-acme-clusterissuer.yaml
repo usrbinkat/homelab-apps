@@ -1,0 +1,19 @@
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-prod
+spec:
+  acme:
+    email: kathryn.morgan@braincraft.io
+    server: https://acme-v02.api.letsencrypt.org/directory
+    privateKeySecretRef:
+      name: letsencrypt-prod-account-key
+    solvers:
+    - dns01:
+        cloudDNS:
+          # The ID of the GCP project
+          project: kingpin-259919
+          # Secret key reference to the service account created above
+          serviceAccountSecretRef:
+            name: clouddns-dns01-solver-svc-acct
+            key: dns01-serviceaccount.json

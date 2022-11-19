@@ -1,0 +1,83 @@
+apiVersion: kubevirt.io/v1
+kind: VirtualMachine
+metadata:
+  name: truenas
+  namespace: default
+  labels:
+    kubevirt.io/os: truenas
+spec:
+  dataVolumeTemplates:
+  - metadata:
+      name: truenas-volume-vda-root
+    spec:
+      pvc:
+        accessModes:
+        - ReadWriteOnce
+        resources:
+          limits:
+            storage: 32G
+          requests:
+            storage: 32G
+      source:
+        registry:
+          url: docker://quay.io/containercraft/truenas:latest
+  running: true
+  template:
+    spec:
+      domain:
+        clock:
+          timer: {}
+          utc: {}
+        cpu:
+          model: host-passthrough
+          threads: 22
+        devices:
+          autoattachGraphicsDevice: true
+          autoattachPodInterface: false
+          autoattachSerialConsole: true
+          disks:
+          - bootOrder: 1
+            disk:
+              bus: sata
+            name: truenas-disk-vda-root
+          hostDevices:
+          - deviceName: dell.com/hba330
+            name: hba
+          - deviceName: sk.hynix.com/nvme512G
+            name: nvme512G
+          - deviceName: optane.intel.com/900Psub
+            name: optane1s
+          - deviceName: optane.intel.com/900Psub
+            name: optane2s
+          - deviceName: optane.intel.com/900Psub
+            name: optane3s
+          - deviceName: optane.intel.com/900Psub
+            name: optane4s
+          - deviceName: nvme.samsung.com/970evo
+            name: nvme01
+          - deviceName: nvme.samsung.com/970evo
+            name: nvme02
+          - deviceName: nvme.samsung.com/970evo
+            name: nvme03
+          - deviceName: nvme.samsung.com/970evo
+            name: nvme04
+          interfaces:
+          - bridge: {}
+            model: virtio
+            name: enp1s0
+          rng: {}
+        machine:
+          type: q35
+        resources:
+          requests:
+            devices.kubevirt.io/kvm: "1"
+            memory: 48G
+      terminationGracePeriodSeconds: 0
+      networks:
+      - name: enp1s0
+        multus:
+          networkName: nadbr0
+      volumes:
+      - name: truenas-disk-vda-root
+        dataVolume:
+          name: truenas-volume-vda-root

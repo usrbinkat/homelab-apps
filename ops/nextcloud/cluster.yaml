@@ -1,0 +1,22 @@
+---
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: postgres-nextcloud
+  namespace: nextcloud
+spec:
+  instances: 1
+  minSyncReplicas: 0
+  maxSyncReplicas: 0
+  primaryUpdateStrategy: unsupervised
+  superuserSecret:
+    name: postgres-nextcloud-superuser
+  storage:
+    storageClass: microk8s-hostpath
+    size: 12G
+  bootstrap:
+    initdb:
+      database: app
+      owner: app
+      secret:
+        name: postgres-nextcloud-app

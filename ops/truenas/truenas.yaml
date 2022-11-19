@@ -1,0 +1,74 @@
+apiVersion: kubevirt.io/v1
+kind: VirtualMachine
+metadata:
+  name: truenas
+  labels:
+    kubevirt.io/os: truenas
+spec:
+  running: true
+  dataVolumeTemplates:
+  - metadata:
+      name: truenas-volume-vda-root
+    spec:
+      pvc:
+        accessModes:
+        - ReadWriteOnce
+        resources:
+          limits:
+            storage: 32G
+          requests:
+            storage: 32G
+      source:
+        registry:
+          url: docker://quay.io/containercraft/truenas:latest
+  template:
+    spec:
+      domain:
+        clock:
+          timer: {}
+          utc: {}
+        cpu:
+          model: host-passthrough
+          threads: 16
+        devices:
+          rng: {}
+          autoattachGraphicsDevice: true
+          autoattachPodInterface: false
+          autoattachSerialConsole: true
+          hostDevices:
+          - name: hba
+            deviceName: "dell.com/hba330"
+          - name: nvme512G
+            deviceName: "sk.hynix.com/nvme512G"
+          - name: optane1s
+            deviceName: "optane.intel.com/900Psub"
+          - name: optane2s
+            deviceName: "optane.intel.com/900Psub"
+          - name: optane3s
+            deviceName: "optane.intel.com/900Psub"
+          - name: optane4s
+            deviceName: "optane.intel.com/900Psub"
+          disks:
+          - name: truenas-disk-vda-root
+            bootOrder: 1
+            disk:
+              bus: sata
+          interfaces:
+          - bridge: {}
+            model: virtio
+            name: enp1s0
+        machine:
+          type: q35
+        resources:
+          requests:
+            devices.kubevirt.io/kvm: "1"
+            memory: 64G
+      networks:
+      - name: enp1s0
+        multus:
+          networkName: nadbr0
+      terminationGracePeriodSeconds: 0
+      volumes:
+      - name: truenas-disk-vda-root
+        dataVolume:
+          name: truenas-volume-vda-root

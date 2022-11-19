@@ -1,0 +1,28 @@
+apiVersion: kubevirt.io/v1
+kind: KubeVirt
+metadata:
+  name: kubevirt
+  namespace: kubevirt
+spec:
+  certificateRotateStrategy: {}
+  customizeComponents: {}
+  imagePullPolicy: IfNotPresent
+  workloadUpdateStrategy: {}
+  configuration:
+    developerConfiguration:
+      featureGates:
+        - HostDevices
+    permittedHostDevices:
+      pciHostDevices:
+      - pciVendorSelector: "1000:0097"
+        resourceName: "dell.com/hba330"
+      - pciVendorSelector: "1c5c:1639"
+        resourceName: "sk.hynix.com/nvme512G"
+      - pciVendorSelector: "8086:3902"
+        resourceName: "optane.intel.com/900P"
+      - pciVendorSelector: "8086:2700"
+        resourceName: "optane.intel.com/900Psub"
+      - pciVendorSelector: "144d:a808"
+        resourceName: "nvme.samsung.com/970evo"
+      - pciVendorSelector: "144d:a801"
+        resourceName: "nvme.samsung.com/970sub"

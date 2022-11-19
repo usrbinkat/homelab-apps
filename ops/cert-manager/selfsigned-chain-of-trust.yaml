@@ -1,0 +1,33 @@
+---
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: cluster-selfsigned-issuer-root
+spec:
+  selfSigned: {}
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: cluster-selfsigned-issuer-ca
+spec:
+  commonName: cluster-selfsigned-issuer-ca
+  duration: 2160h0m0s
+  isCA: true
+  issuerRef:
+    group: cert-manager.io
+    kind: ClusterIssuer
+    name: cluster-selfsigned-issuer-root
+  privateKey:
+    algorithm: ECDSA
+    size: 256
+  renewBefore: 360h0m0s
+  secretName: cluster-selfsigned-issuer-ca
+---
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: cluster-selfsigned-issuer
+spec:
+  ca:
+    secretName: cluster-selfsigned-issuer-ca

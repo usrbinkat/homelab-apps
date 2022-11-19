@@ -1,0 +1,37 @@
+upstream:
+  default:
+    - 192.168.1.23
+    - 192.168.1.23
+blocking:
+  processingConcurrency: 8
+  blackLists:
+    ads:
+      - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+  clientGroupsBlock:
+    default:
+      - ads
+httpPort: 4000
+port: 53
+logLevel: info
+
+caching:
+  minTime: 5m
+  maxTime: 30m
+  maxItemsCount: 2000
+  prefetching: true
+  prefetchExpires: 2h
+  prefetchThreshold: 5
+  prefetchMaxItemsCount: 2000
+  cacheTimeNegative: 30m
+
+#redis:
+#  address: redis:6379
+#  password: passwd
+#  database: 2
+#  required: true
+#  connectionAttempts: 10
+#  connectionCooldown: 3s
+
+prometheus:
+  enable: false
+  path: /metrics

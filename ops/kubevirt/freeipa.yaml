@@ -1,0 +1,171 @@
+apiVersion: kubevirt.io/v1
+kind: VirtualMachine
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"kubevirt.io/v1","kind":"VirtualMachine","metadata":{"annotations":{},"labels":{"app":"kargo"},"name":"freeipa","namespace":"default"},"spec":{"dataVolumeTemplates":[{"metadata":{"name":"freeipa-volume-vda-root"},"spec":{"pvc":{"accessModes":["ReadWriteOnce"],"resources":{"limits":{"storage":"32G"},"requests":{"storage":"32G"}},"storageClassName":"microk8s-hostpath"},"source":{"registry":{"url":"docker://docker.io/containercraft/fedora:latest"}}}}],"running":true,"template":{"spec":{"accessCredentials":[{"sshPublicKey":{"propagationMethod":{"qemuGuestAgent":{"users":["kc2user"]}},"source":{"secret":{"secretName":"kargo-sshpubkey-kc2user"}}}}],"domain":{"clock":{"timer":{},"utc":{}},"cpu":{"cores":1,"model":"host-passthrough","sockets":1,"threads":6},"devices":{"autoattachGraphicsDevice":true,"autoattachPodInterface":false,"autoattachSerialConsole":true,"disks":[{"bootOrder":1,"disk":{"bus":"virtio"},"name":"freeipa-disk-vda-root"},{"disk":{"bus":"virtio"},"name":"cloudinitdisk"}],"interfaces":[{"bridge":{},"model":"virtio","name":"enp1s0"}],"networkInterfaceMultiqueue":false,"rng":{}},"machine":{"type":"q35"},"resources":{"limits":{"memory":"8G"},"requests":{"devices.kubevirt.io/kvm":"1","memory":"8G"}}},"networks":[{"multus":{"networkName":"nadbr0"},"name":"enp1s0"}],"terminationGracePeriodSeconds":0,"volumes":[{"dataVolume":{"name":"freeipa-volume-vda-root"},"name":"freeipa-disk-vda-root"},{"cloudInitNoCloud":{"networkData":"version: 2\nethernets:\n  enp1s0:\n    dhcp4: true\n    dhcp6: true\n    dhcp-identifier: mac\n","userData":"#cloud-config\nhostname: freeipa\nssh_pwauth: true\ndisable_root: true\nchpasswd:\n  list: |\n    kc2user:kc2user\n  expire: False\nusers:\n  - name: kc2user\n    shell: /bin/bash\n    lock_passwd: false\n    sudo: ['ALL=(ALL) NOPASSWD:ALL']\n    groups: sudo,libvirt,xrdp,docker,ssl-cert\ngrowpart:\n  mode: auto\n  devices: ['/']\n  ignore_growroot_disabled: true\npackage_upgrade: true\npackages:\n  - \"vim\"\n  - \"screenfetch\"\n  - \"qemu-guest-agent\"\nruncmd:\n  - \"mkdir -p /home/kc2user/.ssh\"\n  - \"chown -R kc2user:kc2user /home/kc2user/.ssh\"\n  - \"mkdir -p /home/kc2user/.kube\"\n  - \"chown -R kc2user:kc2user /home/kc2user/.kube\"\n  - \"systemctl enable --now qemu-guest-agent\"\n  - \"systemctl restart qemu-guest-agent\"\n  - \"dnf remove -y pcsc-lite\"\n  - \"systemctl stop firewalld\"\n  - \"systemctl disable firewalld\"\n  - \"screenfetch\"\n  - \"/bin/fedora-third-party enable\"\n  - \"touch /.autorelabel\"\n"},"name":"cloudinitdisk"}]}}}}
+    kubevirt.io/latest-observed-api-version: v1
+    kubevirt.io/storage-observed-api-version: v1alpha3
+  creationTimestamp: "2022-11-07T02:54:34Z"
+  generation: 3
+  labels:
+    app: kargo
+  name: freeipa
+  namespace: default
+  resourceVersion: "11604370"
+  uid: b90951d8-a0dc-4253-847d-bd18d632be39
+spec:
+  dataVolumeTemplates:
+  - metadata:
+      creationTimestamp: null
+      name: freeipa-volume-vda-root
+    spec:
+      pvc:
+        accessModes:
+        - ReadWriteOnce
+        resources:
+          limits:
+            storage: 32G
+          requests:
+            storage: 32G
+        storageClassName: microk8s-hostpath
+      source:
+        registry:
+          url: docker://docker.io/containercraft/fedora:latest
+  running: true
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      accessCredentials:
+      - sshPublicKey:
+          propagationMethod:
+            qemuGuestAgent:
+              users:
+              - kc2user
+          source:
+            secret:
+              secretName: kargo-sshpubkey-kc2user
+      domain:
+        clock:
+          timer: {}
+          utc: {}
+        cpu:
+          cores: 1
+          model: host-passthrough
+          sockets: 1
+          threads: 6
+        devices:
+          autoattachGraphicsDevice: true
+          autoattachPodInterface: false
+          autoattachSerialConsole: true
+          disks:
+          - bootOrder: 1
+            disk:
+              bus: virtio
+            name: freeipa-disk-vda-root
+          - disk:
+              bus: virtio
+            name: cloudinitdisk
+          interfaces:
+          - bridge: {}
+            model: virtio
+            name: enp1s0
+          networkInterfaceMultiqueue: false
+          rng: {}
+        machine:
+          type: q35
+        resources:
+          limits:
+            memory: 8G
+          requests:
+            devices.kubevirt.io/kvm: "1"
+            memory: 8G
+      networks:
+      - multus:
+          networkName: nadbr0
+        name: enp1s0
+      terminationGracePeriodSeconds: 0
+      volumes:
+      - dataVolume:
+          name: freeipa-volume-vda-root
+        name: freeipa-disk-vda-root
+      - cloudInitNoCloud:
+          networkData: |
+            version: 2
+            ethernets:
+              enp1s0:
+                dhcp4: true
+                dhcp6: true
+                dhcp-identifier: mac
+          userData: |
+            #cloud-config
+            hostname: freeipa
+            ssh_pwauth: true
+            disable_root: true
+            chpasswd:
+              list: |
+                kc2user:kc2user
+              expire: False
+            users:
+              - name: kc2user
+                shell: /bin/bash
+                lock_passwd: false
+                sudo: ['ALL=(ALL) NOPASSWD:ALL']
+                groups: sudo,libvirt,xrdp,docker,ssl-cert
+            growpart:
+              mode: auto
+              devices: ['/']
+              ignore_growroot_disabled: true
+            package_upgrade: true
+            packages:
+              - "vim"
+              - "screenfetch"
+              - "qemu-guest-agent"
+            runcmd:
+              - "mkdir -p /home/kc2user/.ssh"
+              - "chown -R kc2user:kc2user /home/kc2user/.ssh"
+              - "mkdir -p /home/kc2user/.kube"
+              - "chown -R kc2user:kc2user /home/kc2user/.kube"
+              - "systemctl enable --now qemu-guest-agent"
+              - "systemctl restart qemu-guest-agent"
+              - "dnf remove -y pcsc-lite"
+              - "systemctl stop firewalld"
+              - "systemctl disable firewalld"
+              - "screenfetch"
+              - "/bin/fedora-third-party enable"
+              - "touch /.autorelabel"
+        name: cloudinitdisk
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2022-11-19T03:55:10Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: null
+    message: 'cannot migrate VMI: PVC freeipa-volume-vda-root is not shared, live
+      migration requires that all PVCs must be shared (using ReadWriteMany access
+      mode)'
+    reason: DisksNotLiveMigratable
+    status: "False"
+    type: LiveMigratable
+  - lastProbeTime: "2022-11-19T03:55:23Z"
+    lastTransitionTime: null
+    status: "True"
+    type: AgentConnected
+  - lastProbeTime: null
+    lastTransitionTime: "2022-11-19T03:55:27Z"
+    status: "True"
+    type: AccessCredentialsSynchronized
+  created: true
+  printableStatus: Running
+  ready: true
+  volumeSnapshotStatuses:
+  - enabled: false
+    name: freeipa-disk-vda-root
+    reason: 'No VolumeSnapshotClass: Volume snapshots are not configured for this
+      StorageClass [microk8s-hostpath] [freeipa-disk-vda-root]'
+  - enabled: false
+    name: cloudinitdisk
+    reason: Snapshot is not supported for this volumeSource type [cloudinitdisk]

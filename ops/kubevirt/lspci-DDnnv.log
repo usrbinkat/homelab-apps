@@ -1,0 +1,2145 @@
+0000:00:00.0 Host bridge [0600]: Intel Corporation Sky Lake-E DMI3 Registers [8086:2020] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E DMI3 Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 0
+	Capabilities: [90] Express Root Port (Slot-), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [144] Vendor Specific Information: ID=0004 Rev=1 Len=03c <?>
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+
+0000:00:04.0 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 130, NUMA node 0, IOMMU group 1
+	Memory at 92e2c000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:00:04.1 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 132, NUMA node 0, IOMMU group 2
+	Memory at 92e28000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:00:04.2 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 130, NUMA node 0, IOMMU group 3
+	Memory at 92e24000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:00:04.3 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 132, NUMA node 0, IOMMU group 4
+	Memory at 92e20000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:00:04.4 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 130, NUMA node 0, IOMMU group 5
+	Memory at 92e1c000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:00:04.5 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 132, NUMA node 0, IOMMU group 6
+	Memory at 92e18000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:00:04.6 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 130, NUMA node 0, IOMMU group 7
+	Memory at 92e14000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:00:04.7 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 132, NUMA node 0, IOMMU group 8
+	Memory at 92e10000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:00:05.0 System peripheral [0880]: Intel Corporation Sky Lake-E MM/Vt-d Configuration Registers [8086:2024] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E MM/Vt-d Configuration Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 9
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:00:05.2 System peripheral [0880]: Intel Corporation Sky Lake-E RAS [8086:2025] (rev 05)
+	Flags: fast devsel, NUMA node 0, IOMMU group 10
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:00:05.4 PIC [0800]: Intel Corporation Sky Lake-E IOAPIC [8086:2026] (rev 05) (prog-if 20 [IO(X)-APIC])
+	Subsystem: Intel Corporation Sky Lake-E IOAPIC [8086:2026]
+	Flags: bus master, fast devsel, latency 0, NUMA node 0, IOMMU group 11
+	Memory at 92e3a000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+
+0000:00:08.0 System peripheral [0880]: Intel Corporation Sky Lake-E Ubox Registers [8086:2014] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Ubox Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 12
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:00:08.1 Performance counters [1101]: Intel Corporation Sky Lake-E Ubox Registers [8086:2015] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Ubox Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 13
+
+0000:00:08.2 System peripheral [0880]: Intel Corporation Sky Lake-E Ubox Registers [8086:2016] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Ubox Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 14
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:00:11.0 Unassigned class [ff00]: Intel Corporation C620 Series Chipset Family MROM 0 [8086:a1ec] (rev 09)
+	Subsystem: Dell C620 Series Chipset Family MROM 0 [1028:07e5]
+	Flags: bus master, fast devsel, latency 0, NUMA node 0, IOMMU group 15
+	Capabilities: [80] Power Management version 3
+
+0000:00:14.0 USB controller [0c03]: Intel Corporation C620 Series Chipset Family USB 3.0 xHCI Controller [8086:a1af] (rev 09) (prog-if 30 [XHCI])
+	Subsystem: Dell C620 Series Chipset Family USB 3.0 xHCI Controller [1028:07e5]
+	Flags: bus master, medium devsel, latency 0, IRQ 48, NUMA node 0, IOMMU group 16
+	Memory at 92e00000 (64-bit, non-prefetchable) [size=64K]
+	Capabilities: [70] Power Management version 2
+	Capabilities: [80] MSI: Enable+ Count=1/8 Maskable- 64bit+
+	Kernel driver in use: xhci_hcd
+	Kernel modules: xhci_pci
+
+0000:00:14.2 Signal processing controller [1180]: Intel Corporation C620 Series Chipset Family Thermal Subsystem [8086:a1b1] (rev 09)
+	Subsystem: Dell C620 Series Chipset Family Thermal Subsystem [1028:07e5]
+	Flags: bus master, fast devsel, latency 0, IRQ 18, NUMA node 0, IOMMU group 16
+	Memory at 92e38000 (64-bit, non-prefetchable) [size=4K]
+	Capabilities: [50] Power Management version 3
+	Capabilities: [80] MSI: Enable- Count=1/1 Maskable- 64bit-
+	Kernel driver in use: intel_pch_thermal
+	Kernel modules: intel_pch_thermal
+
+0000:00:16.0 Communication controller [0780]: Intel Corporation C620 Series Chipset Family MEI Controller #1 [8086:a1ba] (rev 09)
+	Subsystem: Dell C620 Series Chipset Family MEI Controller [1028:07e5]
+	Flags: bus master, fast devsel, latency 0, IRQ 11, NUMA node 0, IOMMU group 17
+	Memory at 92e37000 (64-bit, non-prefetchable) [size=4K]
+	Capabilities: [50] Power Management version 3
+	Capabilities: [8c] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Kernel modules: mei_me
+
+0000:00:16.1 Communication controller [0780]: Intel Corporation C620 Series Chipset Family MEI Controller #2 [8086:a1bb] (rev 09)
+	Subsystem: Dell C620 Series Chipset Family MEI Controller [1028:07e5]
+	Flags: bus master, fast devsel, latency 0, IRQ 11, NUMA node 0, IOMMU group 17
+	Memory at 92e36000 (64-bit, non-prefetchable) [size=4K]
+	Capabilities: [50] Power Management version 3
+	Capabilities: [8c] MSI: Enable- Count=1/1 Maskable- 64bit+
+
+0000:00:16.4 Communication controller [0780]: Intel Corporation C620 Series Chipset Family MEI Controller #3 [8086:a1be] (rev 09)
+	Subsystem: Dell C620 Series Chipset Family MEI Controller [1028:07e5]
+	Flags: bus master, fast devsel, latency 0, IRQ 11, NUMA node 0, IOMMU group 17
+	Memory at 92e35000 (64-bit, non-prefetchable) [size=4K]
+	Capabilities: [50] Power Management version 3
+	Capabilities: [8c] MSI: Enable- Count=1/1 Maskable- 64bit+
+
+0000:00:1c.0 PCI bridge [0604]: Intel Corporation C620 Series Chipset Family PCI Express Root Port #1 [8086:a190] (rev f9) (prog-if 00 [Normal decode])
+	Subsystem: Dell C620 Series Chipset Family PCI Express Root Port [1028:07e5]
+	Flags: bus master, fast devsel, latency 0, IRQ 24, NUMA node 0, IOMMU group 18
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: 92a00000-92dfffff [size=4M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Express Root Port (Slot-), MSI 00
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+	Capabilities: [90] Subsystem: Dell C620 Series Chipset Family PCI Express Root Port [1028:07e5]
+	Capabilities: [a0] Power Management version 3
+	Kernel driver in use: pcieport
+
+0000:00:1c.4 PCI bridge [0604]: Intel Corporation C620 Series Chipset Family PCI Express Root Port #5 [8086:a194] (rev f9) (prog-if 00 [Normal decode])
+	Subsystem: Dell C620 Series Chipset Family PCI Express Root Port [1028:07e5]
+	Flags: bus master, fast devsel, latency 0, IRQ 25, NUMA node 0, IOMMU group 19
+	Bus: primary=00, secondary=02, subordinate=03, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: 92000000-928fffff [size=9M] [32-bit]
+	Prefetchable memory behind bridge: 91000000-91ffffff [size=16M] [32-bit]
+	Capabilities: [40] Express Root Port (Slot+), MSI 00
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+	Capabilities: [90] Subsystem: Dell C620 Series Chipset Family PCI Express Root Port [1028:07e5]
+	Capabilities: [a0] Power Management version 3
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Access Control Services
+	Kernel driver in use: pcieport
+
+0000:00:1f.0 ISA bridge [0601]: Intel Corporation C621 Series Chipset LPC/eSPI Controller [8086:a1c1] (rev 09)
+	Subsystem: Dell C621 Series Chipset LPC/eSPI Controller [1028:07e5]
+	Flags: bus master, medium devsel, latency 0, NUMA node 0, IOMMU group 20
+	Kernel modules: lpc_ich
+
+0000:00:1f.2 Memory controller [0580]: Intel Corporation C620 Series Chipset Family Power Management Controller [8086:a1a1] (rev 09)
+	Subsystem: Dell C620 Series Chipset Family Power Management Controller [1028:07e5]
+	Flags: bus master, fast devsel, latency 0, NUMA node 0, IOMMU group 20
+	Memory at 92e30000 (32-bit, non-prefetchable) [size=16K]
+
+0000:00:1f.4 SMBus [0c05]: Intel Corporation C620 Series Chipset Family SMBus [8086:a1a3] (rev 09)
+	Subsystem: Dell C620 Series Chipset Family SMBus [1028:07e5]
+	Flags: medium devsel, IRQ 16, NUMA node 0, IOMMU group 20
+	Memory at 92e34000 (64-bit, non-prefetchable) [size=256]
+	I/O ports at 2000 [size=32]
+	Kernel driver in use: i801_smbus
+	Kernel modules: i2c_i801
+
+0000:00:1f.5 Serial bus controller [0c80]: Intel Corporation C620 Series Chipset Family SPI Controller [8086:a1a4] (rev 09)
+	Subsystem: Dell C620 Series Chipset Family SPI Controller [1028:07e5]
+	Flags: bus master, fast devsel, latency 0, NUMA node 0, IOMMU group 20
+	Memory at fe010000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: intel-spi
+	Kernel modules: spi_intel_pci
+
+0000:02:00.0 PCI bridge [0604]: PLDA PCI Express Bridge [1556:be00] (rev 02) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 16, NUMA node 0, IOMMU group 21
+	Bus: primary=02, secondary=03, subordinate=03, sec-latency=0
+	I/O behind bridge: [disabled] [32-bit]
+	Memory behind bridge: 92000000-928fffff [size=9M] [32-bit]
+	Prefetchable memory behind bridge: 91000000-91ffffff [size=16M] [32-bit]
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [78] Power Management version 3
+	Capabilities: [80] Express PCI-Express to PCI/PCI-X Bridge, MSI 00
+	Capabilities: [100] Virtual Channel
+	Capabilities: [800] Advanced Error Reporting
+
+0000:03:00.0 VGA compatible controller [0300]: Matrox Electronics Systems Ltd. Integrated Matrox G200eW3 Graphics Controller [102b:0536] (rev 04) (prog-if 00 [VGA controller])
+	DeviceName: Embedded Video
+	Subsystem: Dell Integrated Matrox G200eW3 Graphics Controller [1028:07e5]
+	Flags: bus master, 66MHz, medium devsel, latency 0, IRQ 16, NUMA node 0, IOMMU group 21
+	Memory at 91000000 (32-bit, prefetchable) [size=16M]
+	Memory at 92808000 (32-bit, non-prefetchable) [size=16K]
+	Memory at 92000000 (32-bit, non-prefetchable) [size=8M]
+	Expansion ROM at 000c0000 [virtual] [disabled] [size=128K]
+	Capabilities: [dc] Power Management version 3
+	Kernel driver in use: mgag200
+	Kernel modules: mgag200
+
+0000:17:00.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port A [8086:2030] (rev 05) (prog-if 00 [Normal decode])
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port A [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 27, NUMA node 0, IOMMU group 22
+	Bus: primary=17, secondary=18, subordinate=19, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: a0000000-a00fffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: 9d800000-9eafffff [size=19M] [32-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port A [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot-), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:17:01.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port B [8086:2031] (rev 05) (prog-if 00 [Normal decode])
+	DeviceName: SLOT 2
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port B [8086:0000]
+	Physical Slot: 2
+	Flags: bus master, fast devsel, latency 0, IRQ 28, NUMA node 0, IOMMU group 23
+	Bus: primary=17, secondary=1a, subordinate=1a, sec-latency=0
+	I/O behind bridge: 5000-5fff [size=4K] [16-bit]
+	Memory behind bridge: 9fe00000-9fefffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: 384000000000-3840bfffffff [size=3G] [32-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port B [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot+), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:17:02.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port C [8086:2032] (rev 05) (prog-if 00 [Normal decode])
+	DeviceName: Internal PERC Card
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port C [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 29, NUMA node 0, IOMMU group 24
+	Bus: primary=17, secondary=1b, subordinate=1b, sec-latency=0
+	I/O behind bridge: 4000-4fff [size=4K] [16-bit]
+	Memory behind bridge: 9eb00000-9fdfffff [size=19M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port C [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot-), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:17:05.0 System peripheral [0880]: Intel Corporation Sky Lake-E VT-d [8086:2034] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E VT-d [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 25
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:17:05.2 System peripheral [0880]: Intel Corporation Sky Lake-E RAS Configuration Registers [8086:2035] (rev 05)
+	Flags: fast devsel, NUMA node 0, IOMMU group 26
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:17:05.4 PIC [0800]: Intel Corporation Sky Lake-E IOxAPIC Configuration Registers [8086:2036] (rev 05) (prog-if 20 [IO(X)-APIC])
+	Subsystem: Intel Corporation Sky Lake-E IOxAPIC Configuration Registers [8086:2036]
+	Flags: bus master, fast devsel, latency 0, NUMA node 0, IOMMU group 27
+	Memory at 9ff00000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+
+0000:17:08.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 28
+
+0000:17:08.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 28
+
+0000:17:08.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 28
+
+0000:17:08.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 28
+
+0000:17:08.4 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 28
+
+0000:17:08.5 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 28
+
+0000:17:08.6 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 28
+
+0000:17:08.7 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 28
+
+0000:17:09.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 29
+
+0000:17:09.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 29
+
+0000:17:09.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 29
+
+0000:17:09.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 29
+
+0000:17:09.4 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 29
+
+0000:17:09.5 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 29
+
+0000:17:09.6 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 29
+
+0000:17:09.7 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 29
+
+0000:17:0a.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 30
+
+0000:17:0a.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 30
+
+0000:17:0a.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 30
+
+0000:17:0a.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 30
+
+0000:17:0a.4 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 30
+
+0000:17:0a.5 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 30
+
+0000:17:0a.6 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 30
+
+0000:17:0a.7 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 30
+
+0000:17:0b.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 31
+
+0000:17:0b.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 31
+
+0000:17:0b.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 31
+
+0000:17:0b.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 31
+
+0000:17:0e.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 32
+
+0000:17:0e.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 32
+
+0000:17:0e.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 32
+
+0000:17:0e.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 32
+
+0000:17:0e.4 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 32
+
+0000:17:0e.5 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 32
+
+0000:17:0e.6 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 32
+
+0000:17:0e.7 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 32
+
+0000:17:0f.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 33
+
+0000:17:0f.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 33
+
+0000:17:0f.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 33
+
+0000:17:0f.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 33
+
+0000:17:0f.4 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 33
+
+0000:17:0f.5 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 33
+
+0000:17:0f.6 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 33
+
+0000:17:0f.7 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 33
+
+0000:17:10.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 34
+
+0000:17:10.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 34
+
+0000:17:10.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 34
+
+0000:17:10.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 34
+
+0000:17:10.4 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 34
+
+0000:17:10.5 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 34
+
+0000:17:10.6 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 34
+
+0000:17:10.7 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 34
+
+0000:17:11.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 35
+
+0000:17:11.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 35
+
+0000:17:11.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 35
+
+0000:17:11.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 35
+
+0000:17:1d.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:2054] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 36
+
+0000:17:1d.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:2055] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 36
+
+0000:17:1d.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:2056] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 36
+
+0000:17:1d.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:2057] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 36
+
+0000:17:1e.0 System peripheral [0880]: Intel Corporation Sky Lake-E PCU Registers [8086:2080] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E PCU Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 37
+
+0000:17:1e.1 System peripheral [0880]: Intel Corporation Sky Lake-E PCU Registers [8086:2081] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E PCU Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 37
+
+0000:17:1e.2 System peripheral [0880]: Intel Corporation Sky Lake-E PCU Registers [8086:2082] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E PCU Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 37
+
+0000:17:1e.3 System peripheral [0880]: Intel Corporation Sky Lake-E PCU Registers [8086:2083] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E PCU Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 37
+
+0000:17:1e.4 System peripheral [0880]: Intel Corporation Sky Lake-E PCU Registers [8086:2084] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E PCU Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 37
+
+0000:17:1e.5 System peripheral [0880]: Intel Corporation Sky Lake-E PCU Registers [8086:2085] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E PCU Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 37
+
+0000:17:1e.6 System peripheral [0880]: Intel Corporation Sky Lake-E PCU Registers [8086:2086] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E PCU Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 37
+
+0000:18:00.0 Ethernet controller [0200]: Broadcom Inc. and subsidiaries BCM57416 NetXtreme-E Dual-Media 10G RDMA Ethernet Controller [14e4:16d8] (rev 01)
+	DeviceName: NIC1
+	Subsystem: Dell BCM57416 NetXtreme-E Dual-Media 10G RDMA Ethernet Controller [1028:07e5]
+	Flags: bus master, fast devsel, latency 0, IRQ 49, NUMA node 0, IOMMU group 38
+	Memory at 9ea10000 (64-bit, prefetchable) [size=64K]
+	Memory at 9e100000 (64-bit, prefetchable) [size=1M]
+	Memory at 9eaa2000 (64-bit, prefetchable) [size=8K]
+	Expansion ROM at a0000000 [disabled] [size=256K]
+	Capabilities: [48] Power Management version 3
+	Capabilities: [50] Vital Product Data
+	Capabilities: [58] MSI: Enable- Count=1/8 Maskable- 64bit+
+	Capabilities: [a0] MSI-X: Enable+ Count=74 Masked-
+	Capabilities: [ac] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [13c] Device Serial Number f4-02-70-ff-fe-9b-42-10
+	Capabilities: [150] Power Budgeting <?>
+	Capabilities: [160] Virtual Channel
+	Capabilities: [180] Vendor Specific Information: ID=0000 Rev=0 Len=020 <?>
+	Capabilities: [1b0] Latency Tolerance Reporting
+	Capabilities: [1b8] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [1c0] Single Root I/O Virtualization (SR-IOV)
+	Capabilities: [230] Transaction Processing Hints
+	Capabilities: [300] Secondary PCI Express
+	Capabilities: [200] Precision Time Measurement
+	Kernel driver in use: bnxt_en
+	Kernel modules: bnxt_en
+
+0000:18:00.1 Ethernet controller [0200]: Broadcom Inc. and subsidiaries BCM57416 NetXtreme-E Dual-Media 10G RDMA Ethernet Controller [14e4:16d8] (rev 01)
+	DeviceName: NIC2
+	Subsystem: Dell BCM57416 NetXtreme-E Dual-Media 10G RDMA Ethernet Controller [1028:07e5]
+	Flags: bus master, fast devsel, latency 0, IRQ 88, NUMA node 0, IOMMU group 38
+	Memory at 9ea00000 (64-bit, prefetchable) [size=64K]
+	Memory at 9d800000 (64-bit, prefetchable) [size=1M]
+	Memory at 9eaa0000 (64-bit, prefetchable) [size=8K]
+	Expansion ROM at a0040000 [disabled] [size=256K]
+	Capabilities: [48] Power Management version 3
+	Capabilities: [50] Vital Product Data
+	Capabilities: [58] MSI: Enable- Count=1/8 Maskable- 64bit+
+	Capabilities: [a0] MSI-X: Enable+ Count=74 Masked-
+	Capabilities: [ac] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [13c] Device Serial Number f4-02-70-ff-fe-9b-42-10
+	Capabilities: [150] Power Budgeting <?>
+	Capabilities: [180] Vendor Specific Information: ID=0000 Rev=0 Len=020 <?>
+	Capabilities: [1b8] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [1c0] Single Root I/O Virtualization (SR-IOV)
+	Capabilities: [230] Transaction Processing Hints
+	Kernel driver in use: bnxt_en
+	Kernel modules: bnxt_en
+
+0000:1a:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Lexa XT [Radeon PRO WX 2100] [1002:6995] (prog-if 00 [VGA controller])
+	Subsystem: Dell Lexa XT [Radeon PRO WX 2100] [1028:0b0c]
+	Flags: bus master, fast devsel, latency 0, IRQ 129, NUMA node 0, IOMMU group 39
+	Memory at 384000000000 (64-bit, prefetchable) [size=2G]
+	Memory at 384080000000 (64-bit, prefetchable) [size=2M]
+	I/O ports at 5000 [size=256]
+	Memory at 9fe00000 (32-bit, non-prefetchable) [size=256K]
+	Expansion ROM at 9fe60000 [disabled] [size=128K]
+	Capabilities: [48] Vendor Specific Information: Len=08 <?>
+	Capabilities: [50] Power Management version 3
+	Capabilities: [58] Express Legacy Endpoint, MSI 00
+	Capabilities: [a0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [100] Vendor Specific Information: ID=0001 Rev=1 Len=010 <?>
+	Capabilities: [150] Advanced Error Reporting
+	Capabilities: [200] Physical Resizable BAR
+	Capabilities: [270] Secondary PCI Express
+	Capabilities: [2b0] Address Translation Service (ATS)
+	Capabilities: [2c0] Page Request Interface (PRI)
+	Capabilities: [2d0] Process Address Space ID (PASID)
+	Capabilities: [320] Latency Tolerance Reporting
+	Capabilities: [328] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [370] L1 PM Substates
+	Kernel driver in use: amdgpu
+	Kernel modules: amdgpu
+
+0000:1a:00.1 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] Baffin HDMI/DP Audio [Radeon RX 550 640SP / RX 560/560X] [1002:aae0]
+	Subsystem: Dell Baffin HDMI/DP Audio [Radeon RX 550 640SP / RX 560/560X] [1028:aae0]
+	Flags: bus master, fast devsel, latency 0, IRQ 140, NUMA node 0, IOMMU group 39
+	Memory at 9fe40000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [48] Vendor Specific Information: Len=08 <?>
+	Capabilities: [50] Power Management version 3
+	Capabilities: [58] Express Legacy Endpoint, MSI 00
+	Capabilities: [a0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [100] Vendor Specific Information: ID=0001 Rev=1 Len=010 <?>
+	Capabilities: [150] Advanced Error Reporting
+	Capabilities: [328] Alternative Routing-ID Interpretation (ARI)
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+
+0000:1b:00.0 Serial Attached SCSI controller [0107]: Broadcom / LSI SAS3008 PCI-Express Fusion-MPT SAS-3 [1000:0097] (rev 02)
+	DeviceName: Integrated RAID
+	Subsystem: Dell HBA330 Adapter [1028:1f45]
+	Flags: bus master, fast devsel, latency 0, IRQ 153, NUMA node 0, IOMMU group 40
+	I/O ports at 4000 [size=256]
+	Memory at 9fc00000 (64-bit, non-prefetchable) [size=64K]
+	Memory at 9eb00000 (64-bit, non-prefetchable) [size=1M]
+	Expansion ROM at <ignored> [disabled]
+	Capabilities: [50] Power Management version 3
+	Capabilities: [68] Express Endpoint, MSI 00
+	Capabilities: [a8] MSI: Enable- Count=1/1 Maskable+ 64bit+
+	Capabilities: [c0] MSI-X: Enable+ Count=96 Masked-
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [1e0] Secondary PCI Express
+	Capabilities: [1c0] Power Budgeting <?>
+	Capabilities: [190] Dynamic Power Allocation <?>
+	Capabilities: [150] Single Root I/O Virtualization (SR-IOV)
+	Capabilities: [148] Alternative Routing-ID Interpretation (ARI)
+	Kernel driver in use: vfio-pci
+	Kernel modules: mpt3sas
+
+0000:3a:00.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port A [8086:2030] (rev 05) (prog-if 00 [Normal decode])
+	DeviceName: SLOT 3
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port A [8086:0000]
+	Physical Slot: 3
+	Flags: bus master, fast devsel, latency 0, IRQ 31, NUMA node 0, IOMMU group 41
+	Bus: primary=3a, secondary=3b, subordinate=3b, sec-latency=0
+	I/O behind bridge: 6000-6fff [size=4K] [16-bit]
+	Memory behind bridge: ab000000-ac0fffff [size=17M] [32-bit]
+	Prefetchable memory behind bridge: 38bfe0000000-38bff1ffffff [size=288M] [32-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port A [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot+), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:3a:05.0 System peripheral [0880]: Intel Corporation Sky Lake-E VT-d [8086:2034] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E VT-d [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 42
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:05.2 System peripheral [0880]: Intel Corporation Sky Lake-E RAS Configuration Registers [8086:2035] (rev 05)
+	Flags: fast devsel, NUMA node 0, IOMMU group 43
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:05.4 PIC [0800]: Intel Corporation Sky Lake-E IOxAPIC Configuration Registers [8086:2036] (rev 05) (prog-if 20 [IO(X)-APIC])
+	Subsystem: Intel Corporation Sky Lake-E IOxAPIC Configuration Registers [8086:2036]
+	Flags: bus master, fast devsel, latency 0, NUMA node 0, IOMMU group 44
+	Memory at ac100000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+
+0000:3a:08.0 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2066] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 45
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:3a:09.0 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2066] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 46
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:3a:0a.0 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2040] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 47
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0a.1 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2041] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 48
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0a.2 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2042] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 49
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:3a:0a.3 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2043] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 50
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0a.4 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2044] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 51
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0a.5 System peripheral [0880]: Intel Corporation Sky Lake-E LM Channel 1 [8086:2045] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LM Channel 1 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 52
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0a.6 System peripheral [0880]: Intel Corporation Sky Lake-E LMS Channel 1 [8086:2046] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMS Channel 1 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 53
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:3a:0a.7 System peripheral [0880]: Intel Corporation Sky Lake-E LMDP Channel 1 [8086:2047] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMDP Channel 1 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 54
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0b.0 System peripheral [0880]: Intel Corporation Sky Lake-E DECS Channel 2 [8086:2048] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E DECS Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 55
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0b.1 System peripheral [0880]: Intel Corporation Sky Lake-E LM Channel 2 [8086:2049] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LM Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 56
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0b.2 System peripheral [0880]: Intel Corporation Sky Lake-E LMS Channel 2 [8086:204a] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMS Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 57
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:3a:0b.3 System peripheral [0880]: Intel Corporation Sky Lake-E LMDP Channel 2 [8086:204b] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMDP Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 58
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0c.0 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2040] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 59
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0c.1 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2041] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 60
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0c.2 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2042] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 61
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:3a:0c.3 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2043] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 62
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0c.4 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2044] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 63
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0c.5 System peripheral [0880]: Intel Corporation Sky Lake-E LM Channel 1 [8086:2045] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LM Channel 1 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 64
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0c.6 System peripheral [0880]: Intel Corporation Sky Lake-E LMS Channel 1 [8086:2046] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMS Channel 1 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 65
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:3a:0c.7 System peripheral [0880]: Intel Corporation Sky Lake-E LMDP Channel 1 [8086:2047] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMDP Channel 1 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 66
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0d.0 System peripheral [0880]: Intel Corporation Sky Lake-E DECS Channel 2 [8086:2048] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E DECS Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 67
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0d.1 System peripheral [0880]: Intel Corporation Sky Lake-E LM Channel 2 [8086:2049] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LM Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 68
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3a:0d.2 System peripheral [0880]: Intel Corporation Sky Lake-E LMS Channel 2 [8086:204a] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMS Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 69
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:3a:0d.3 System peripheral [0880]: Intel Corporation Sky Lake-E LMDP Channel 2 [8086:204b] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMDP Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 70
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:3b:00.0 VGA compatible controller [0300]: NVIDIA Corporation GP106GL [Quadro P2200] [10de:1c31] (rev a1) (prog-if 00 [VGA controller])
+	Subsystem: NVIDIA Corporation GP106GL [Quadro P2200] [10de:131b]
+	Flags: bus master, fast devsel, latency 0, IRQ 127, NUMA node 0, IOMMU group 71
+	Memory at ab000000 (32-bit, non-prefetchable) [size=16M]
+	Memory at 38bfe0000000 (64-bit, prefetchable) [size=256M]
+	Memory at 38bff0000000 (64-bit, prefetchable) [size=32M]
+	I/O ports at 6000 [size=128]
+	Expansion ROM at ac080000 [disabled] [size=512K]
+	Capabilities: [60] Power Management version 3
+	Capabilities: [68] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [78] Express Legacy Endpoint, MSI 00
+	Capabilities: [100] Virtual Channel
+	Capabilities: [250] Latency Tolerance Reporting
+	Capabilities: [128] Power Budgeting <?>
+	Capabilities: [420] Advanced Error Reporting
+	Capabilities: [600] Vendor Specific Information: ID=0001 Rev=1 Len=024 <?>
+	Capabilities: [900] Secondary PCI Express
+	Kernel driver in use: nouveau
+	Kernel modules: nvidiafb, nouveau
+
+0000:3b:00.1 Audio device [0403]: NVIDIA Corporation GP106 High Definition Audio Controller [10de:10f1] (rev a1)
+	Subsystem: NVIDIA Corporation GP106 High Definition Audio Controller [10de:131b]
+	Flags: bus master, fast devsel, latency 0, IRQ 141, NUMA node 0, IOMMU group 71
+	Memory at ac000000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: [60] Power Management version 3
+	Capabilities: [68] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [78] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+
+0000:5d:01.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port B [8086:2031] (rev 05) (prog-if 00 [Normal decode])
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port B [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 33, NUMA node 0, IOMMU group 72
+	Bus: primary=5d, secondary=5e, subordinate=5e, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: b8a00000-b8afffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port B [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot+), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:5d:02.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port C [8086:2032] (rev 05) (prog-if 00 [Normal decode])
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port C [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 34, NUMA node 0, IOMMU group 73
+	Bus: primary=5d, secondary=5f, subordinate=5f, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: b8900000-b89fffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port C [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot+), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:5d:03.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port D [8086:2033] (rev 05) (prog-if 00 [Normal decode])
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port D [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 35, NUMA node 0, IOMMU group 74
+	Bus: primary=5d, secondary=60, subordinate=60, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: b8800000-b88fffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port D [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot+), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:5d:05.0 System peripheral [0880]: Intel Corporation Sky Lake-E VT-d [8086:2034] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E VT-d [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 75
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:5d:05.2 System peripheral [0880]: Intel Corporation Sky Lake-E RAS Configuration Registers [8086:2035] (rev 05)
+	Flags: fast devsel, NUMA node 0, IOMMU group 76
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:5d:05.4 PIC [0800]: Intel Corporation Sky Lake-E IOxAPIC Configuration Registers [8086:2036] (rev 05) (prog-if 20 [IO(X)-APIC])
+	Subsystem: Intel Corporation Sky Lake-E IOxAPIC Configuration Registers [8086:2036]
+	Flags: bus master, fast devsel, latency 0, NUMA node 0, IOMMU group 77
+	Memory at b8b00000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+
+0000:5d:0e.0 Performance counters [1101]: Intel Corporation Sky Lake-E KTI 0 [8086:2058] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E KTI 0 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 78
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:5d:0e.1 System peripheral [0880]: Intel Corporation Sky Lake-E UPI Registers [8086:2059] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E UPI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 79
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [100] Vendor Specific Information: ID=0001 Rev=0 Len=0f0 <?>
+
+0000:5d:0f.0 Performance counters [1101]: Intel Corporation Sky Lake-E KTI 0 [8086:2058] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E KTI 0 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 80
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:5d:0f.1 System peripheral [0880]: Intel Corporation Sky Lake-E UPI Registers [8086:2059] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E UPI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 81
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [100] Vendor Specific Information: ID=0001 Rev=0 Len=0f0 <?>
+
+0000:5d:10.0 Performance counters [1101]: Intel Corporation Sky Lake-E KTI 0 [8086:2058] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E KTI 0 [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 82
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:5d:10.1 System peripheral [0880]: Intel Corporation Sky Lake-E UPI Registers [8086:2059] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E UPI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 83
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [100] Vendor Specific Information: ID=0001 Rev=0 Len=0f0 <?>
+
+0000:5d:12.0 Performance counters [1101]: Intel Corporation Sky Lake-E M3KTI Registers [8086:204c] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M3KTI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 84
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:5d:12.1 Performance counters [1101]: Intel Corporation Sky Lake-E M3KTI Registers [8086:204d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M3KTI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 85
+	Kernel driver in use: skx_uncore
+
+0000:5d:12.2 System peripheral [0880]: Intel Corporation Sky Lake-E M3KTI Registers [8086:204e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M3KTI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 85
+	Kernel driver in use: skx_uncore
+
+0000:5d:12.4 Performance counters [1101]: Intel Corporation Sky Lake-E M3KTI Registers [8086:204c] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M3KTI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 86
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:5d:12.5 Performance counters [1101]: Intel Corporation Sky Lake-E M3KTI Registers [8086:204d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M3KTI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 85
+	Kernel driver in use: skx_uncore
+
+0000:5d:15.0 System peripheral [0880]: Intel Corporation Sky Lake-E M2PCI Registers [8086:2018] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M2PCI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 87
+
+0000:5d:15.1 Performance counters [1101]: Intel Corporation Sky Lake-E DDRIO Registers [8086:2088] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E DDRIO Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 87
+	Kernel driver in use: skx_uncore
+
+0000:5d:16.0 System peripheral [0880]: Intel Corporation Sky Lake-E M2PCI Registers [8086:2018] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M2PCI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 88
+
+0000:5d:16.1 Performance counters [1101]: Intel Corporation Sky Lake-E DDRIO Registers [8086:2088] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E DDRIO Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 88
+	Kernel driver in use: skx_uncore
+
+0000:5d:16.4 System peripheral [0880]: Intel Corporation Sky Lake-E M2PCI Registers [8086:2018] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M2PCI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 88
+
+0000:5d:16.5 Performance counters [1101]: Intel Corporation Sky Lake-E DDRIO Registers [8086:2088] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E DDRIO Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 88
+
+0000:5d:17.0 System peripheral [0880]: Intel Corporation Sky Lake-E M2PCI Registers [8086:2018] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M2PCI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 89
+
+0000:5d:17.1 Performance counters [1101]: Intel Corporation Sky Lake-E DDRIO Registers [8086:2088] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E DDRIO Registers [8086:0000]
+	Flags: fast devsel, NUMA node 0, IOMMU group 89
+	Kernel driver in use: skx_uncore
+
+0000:5e:00.0 Non-Volatile memory controller [0108]: Phison Electronics Corporation E12 NVMe Controller [1987:5012] (rev 01) (prog-if 02 [NVM Express])
+	Subsystem: Phison Electronics Corporation E12 NVMe Controller [1987:5012]
+	Flags: bus master, fast devsel, latency 0, IRQ 50, NUMA node 0, IOMMU group 90
+	Memory at b8a00000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] Express Endpoint, MSI 00
+	Capabilities: [d0] MSI-X: Enable+ Count=9 Masked-
+	Capabilities: [e0] MSI: Enable- Count=1/8 Maskable- 64bit+
+	Capabilities: [f8] Power Management version 3
+	Capabilities: [100] Latency Tolerance Reporting
+	Capabilities: [110] L1 PM Substates
+	Capabilities: [128] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [200] Advanced Error Reporting
+	Capabilities: [300] Secondary PCI Express
+	Kernel driver in use: nvme
+	Kernel modules: nvme
+
+0000:5f:00.0 Non-Volatile memory controller [0108]: Phison Electronics Corporation E12 NVMe Controller [1987:5012] (rev 01) (prog-if 02 [NVM Express])
+	Subsystem: Phison Electronics Corporation E12 NVMe Controller [1987:5012]
+	Flags: bus master, fast devsel, latency 0, IRQ 52, NUMA node 0, IOMMU group 91
+	Memory at b8900000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] Express Endpoint, MSI 00
+	Capabilities: [d0] MSI-X: Enable+ Count=9 Masked-
+	Capabilities: [e0] MSI: Enable- Count=1/8 Maskable- 64bit+
+	Capabilities: [f8] Power Management version 3
+	Capabilities: [100] Latency Tolerance Reporting
+	Capabilities: [110] L1 PM Substates
+	Capabilities: [128] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [200] Advanced Error Reporting
+	Capabilities: [300] Secondary PCI Express
+	Kernel driver in use: nvme
+	Kernel modules: nvme
+
+0000:60:00.0 Non-Volatile memory controller [0108]: SK hynix Device [1c5c:1639] (prog-if 02 [NVM Express])
+	Subsystem: SK hynix Device [1c5c:1639]
+	Flags: bus master, fast devsel, latency 0, IRQ 154, NUMA node 0, IOMMU group 92
+	Memory at b8800000 (64-bit, non-prefetchable) [size=16K]
+	Memory at b8805000 (32-bit, non-prefetchable) [size=4K]
+	Memory at b8804000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [80] Power Management version 3
+	Capabilities: [90] MSI: Enable- Count=1/16 Maskable+ 64bit+
+	Capabilities: [b0] MSI-X: Enable+ Count=17 Masked-
+	Capabilities: [c0] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [150] Device Serial Number 00-00-00-00-00-00-00-00
+	Capabilities: [160] Power Budgeting <?>
+	Capabilities: [1b8] Latency Tolerance Reporting
+	Capabilities: [300] Secondary PCI Express
+	Capabilities: [400] Vendor Specific Information: ID=0001 Rev=1 Len=010 <?>
+	Capabilities: [900] L1 PM Substates
+	Kernel driver in use: vfio-pci
+	Kernel modules: nvme
+
+0000:80:04.0 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 143, NUMA node 1, IOMMU group 93
+	Memory at c601c000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:80:04.1 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 145, NUMA node 1, IOMMU group 94
+	Memory at c6018000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:80:04.2 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 143, NUMA node 1, IOMMU group 95
+	Memory at c6014000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:80:04.3 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 145, NUMA node 1, IOMMU group 96
+	Memory at c6010000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:80:04.4 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 143, NUMA node 1, IOMMU group 97
+	Memory at c600c000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:80:04.5 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 145, NUMA node 1, IOMMU group 98
+	Memory at c6008000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:80:04.6 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 143, NUMA node 1, IOMMU group 99
+	Memory at c6004000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:80:04.7 System peripheral [0880]: Intel Corporation Sky Lake-E CBDMA Registers [8086:2021] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CBDMA Registers [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 145, NUMA node 1, IOMMU group 100
+	Memory at c6000000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable+ Count=1 Masked-
+	Capabilities: [90] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+	Kernel driver in use: ioatdma
+	Kernel modules: ioatdma
+
+0000:80:05.0 System peripheral [0880]: Intel Corporation Sky Lake-E MM/Vt-d Configuration Registers [8086:2024] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E MM/Vt-d Configuration Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 101
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:80:05.2 System peripheral [0880]: Intel Corporation Sky Lake-E RAS [8086:2025] (rev 05)
+	Flags: fast devsel, NUMA node 1, IOMMU group 102
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:80:05.4 PIC [0800]: Intel Corporation Sky Lake-E IOAPIC [8086:2026] (rev 05) (prog-if 20 [IO(X)-APIC])
+	Subsystem: Intel Corporation Sky Lake-E IOAPIC [8086:2026]
+	Flags: bus master, fast devsel, latency 0, NUMA node 1, IOMMU group 103
+	Memory at c6020000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+
+0000:80:08.0 System peripheral [0880]: Intel Corporation Sky Lake-E Ubox Registers [8086:2014] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Ubox Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 104
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:80:08.1 Performance counters [1101]: Intel Corporation Sky Lake-E Ubox Registers [8086:2015] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Ubox Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 105
+
+0000:80:08.2 System peripheral [0880]: Intel Corporation Sky Lake-E Ubox Registers [8086:2016] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Ubox Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 106
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:88:02.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port C [8086:2032] (rev 05) (prog-if 00 [Normal decode])
+	DeviceName: SLOT 4
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port C [8086:0000]
+	Physical Slot: 4
+	Flags: bus master, fast devsel, latency 0, IRQ 37, NUMA node 1, IOMMU group 107
+	Bus: primary=88, secondary=89, subordinate=89, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: c6400000-c68fffff [size=5M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port C [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot+), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:88:05.0 System peripheral [0880]: Intel Corporation Sky Lake-E VT-d [8086:2034] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E VT-d [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 108
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:88:05.2 System peripheral [0880]: Intel Corporation Sky Lake-E RAS Configuration Registers [8086:2035] (rev 05)
+	Flags: fast devsel, NUMA node 1, IOMMU group 109
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:88:05.4 PIC [0800]: Intel Corporation Sky Lake-E IOxAPIC Configuration Registers [8086:2036] (rev 05) (prog-if 20 [IO(X)-APIC])
+	Subsystem: Intel Corporation Sky Lake-E IOxAPIC Configuration Registers [8086:2036]
+	Flags: bus master, fast devsel, latency 0, NUMA node 1, IOMMU group 110
+	Memory at c6900000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+
+0000:88:08.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 111
+
+0000:88:08.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 111
+
+0000:88:08.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 111
+
+0000:88:08.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 111
+
+0000:88:08.4 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 111
+
+0000:88:08.5 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 111
+
+0000:88:08.6 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 111
+
+0000:88:08.7 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 111
+
+0000:88:09.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 112
+
+0000:88:09.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 112
+
+0000:88:09.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 112
+
+0000:88:09.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 112
+
+0000:88:09.4 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 112
+
+0000:88:09.5 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 112
+
+0000:88:09.6 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 112
+
+0000:88:09.7 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 112
+
+0000:88:0a.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 113
+
+0000:88:0a.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 113
+
+0000:88:0a.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 113
+
+0000:88:0a.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 113
+
+0000:88:0a.4 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 113
+
+0000:88:0a.5 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 113
+
+0000:88:0a.6 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 113
+
+0000:88:0a.7 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 113
+
+0000:88:0b.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 114
+
+0000:88:0b.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 114
+
+0000:88:0b.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 114
+
+0000:88:0b.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 114
+
+0000:88:0e.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 115
+
+0000:88:0e.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 115
+
+0000:88:0e.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 115
+
+0000:88:0e.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 115
+
+0000:88:0e.4 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 115
+
+0000:88:0e.5 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 115
+
+0000:88:0e.6 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 115
+
+0000:88:0e.7 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 115
+
+0000:88:0f.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 116
+
+0000:88:0f.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 116
+
+0000:88:0f.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 116
+
+0000:88:0f.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 116
+
+0000:88:0f.4 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 116
+
+0000:88:0f.5 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 116
+
+0000:88:0f.6 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 116
+
+0000:88:0f.7 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 116
+
+0000:88:10.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 117
+
+0000:88:10.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 117
+
+0000:88:10.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 117
+
+0000:88:10.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 117
+
+0000:88:10.4 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 117
+
+0000:88:10.5 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 117
+
+0000:88:10.6 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 117
+
+0000:88:10.7 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 117
+
+0000:88:11.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 118
+
+0000:88:11.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 118
+
+0000:88:11.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 118
+
+0000:88:11.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:208e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 118
+
+0000:88:1d.0 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:2054] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 119
+
+0000:88:1d.1 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:2055] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 119
+
+0000:88:1d.2 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:2056] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 119
+
+0000:88:1d.3 System peripheral [0880]: Intel Corporation Sky Lake-E CHA Registers [8086:2057] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E CHA Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 119
+
+0000:88:1e.0 System peripheral [0880]: Intel Corporation Sky Lake-E PCU Registers [8086:2080] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E PCU Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 120
+
+0000:88:1e.1 System peripheral [0880]: Intel Corporation Sky Lake-E PCU Registers [8086:2081] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E PCU Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 120
+
+0000:88:1e.2 System peripheral [0880]: Intel Corporation Sky Lake-E PCU Registers [8086:2082] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E PCU Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 120
+
+0000:88:1e.3 System peripheral [0880]: Intel Corporation Sky Lake-E PCU Registers [8086:2083] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E PCU Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 120
+
+0000:88:1e.4 System peripheral [0880]: Intel Corporation Sky Lake-E PCU Registers [8086:2084] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E PCU Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 120
+
+0000:88:1e.5 System peripheral [0880]: Intel Corporation Sky Lake-E PCU Registers [8086:2085] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E PCU Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 120
+
+0000:88:1e.6 System peripheral [0880]: Intel Corporation Sky Lake-E PCU Registers [8086:2086] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E PCU Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 120
+
+0000:89:00.0 Ethernet controller [0200]: Aquantia Corp. AQC100 10G Ethernet MAC controller [AQtion] [1d6a:00b1] (rev 02)
+	Subsystem: ASUSTeK Computer Inc. AQC100 10G Ethernet MAC controller [AQtion] [1043:874a]
+	Flags: bus master, fast devsel, latency 0, IRQ 89, NUMA node 1, IOMMU group 121
+	Memory at c6800000 (64-bit, non-prefetchable) [size=64K]
+	Memory at c6810000 (64-bit, non-prefetchable) [size=4K]
+	Memory at c6400000 (64-bit, non-prefetchable) [size=4M]
+	Expansion ROM at c6840000 [disabled] [size=256K]
+	Capabilities: [40] Express Endpoint, MSI 00
+	Capabilities: [80] Power Management version 3
+	Capabilities: [90] MSI-X: Enable+ Count=32 Masked-
+	Capabilities: [a0] MSI: Enable- Count=1/32 Maskable- 64bit+
+	Capabilities: [c0] Vital Product Data
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [150] Vendor Specific Information: ID=0001 Rev=1 Len=024 <?>
+	Capabilities: [180] Secondary PCI Express
+	Kernel driver in use: atlantic
+	Kernel modules: atlantic
+
+0000:b0:00.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port A [8086:2030] (rev 05) (prog-if 00 [Normal decode])
+	DeviceName: SLOT 8
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port A [8086:0000]
+	Physical Slot: 8
+	Flags: bus master, fast devsel, latency 0, IRQ 39, NUMA node 1, IOMMU group 122
+	Bus: primary=b0, secondary=b1, subordinate=b1, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: c6f00000-c6ffffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port A [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot+), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:b0:01.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port B [8086:2031] (rev 05) (prog-if 00 [Normal decode])
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port B [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 40, NUMA node 1, IOMMU group 123
+	Bus: primary=b0, secondary=b2, subordinate=b2, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: c6e00000-c6efffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port B [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot+), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:b0:02.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port C [8086:2032] (rev 05) (prog-if 00 [Normal decode])
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port C [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 41, NUMA node 1, IOMMU group 124
+	Bus: primary=b0, secondary=b3, subordinate=b3, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: c6d00000-c6dfffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port C [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot+), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:b0:03.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port D [8086:2033] (rev 05) (prog-if 00 [Normal decode])
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port D [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 42, NUMA node 1, IOMMU group 125
+	Bus: primary=b0, secondary=b4, subordinate=b4, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: c6c00000-c6cfffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port D [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot+), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:b0:05.0 System peripheral [0880]: Intel Corporation Sky Lake-E VT-d [8086:2034] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E VT-d [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 126
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:05.2 System peripheral [0880]: Intel Corporation Sky Lake-E RAS Configuration Registers [8086:2035] (rev 05)
+	Flags: fast devsel, NUMA node 1, IOMMU group 127
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:05.4 PIC [0800]: Intel Corporation Sky Lake-E IOxAPIC Configuration Registers [8086:2036] (rev 05) (prog-if 20 [IO(X)-APIC])
+	Subsystem: Intel Corporation Sky Lake-E IOxAPIC Configuration Registers [8086:2036]
+	Flags: bus master, fast devsel, latency 0, NUMA node 1, IOMMU group 128
+	Memory at c7000000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+
+0000:b0:08.0 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2066] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 129
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:b0:09.0 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2066] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 130
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:b0:0a.0 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2040] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 131
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0a.1 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2041] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 132
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0a.2 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2042] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 133
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:b0:0a.3 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2043] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 134
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0a.4 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2044] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 135
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0a.5 System peripheral [0880]: Intel Corporation Sky Lake-E LM Channel 1 [8086:2045] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LM Channel 1 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 136
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0a.6 System peripheral [0880]: Intel Corporation Sky Lake-E LMS Channel 1 [8086:2046] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMS Channel 1 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 137
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:b0:0a.7 System peripheral [0880]: Intel Corporation Sky Lake-E LMDP Channel 1 [8086:2047] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMDP Channel 1 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 138
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0b.0 System peripheral [0880]: Intel Corporation Sky Lake-E DECS Channel 2 [8086:2048] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E DECS Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 139
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0b.1 System peripheral [0880]: Intel Corporation Sky Lake-E LM Channel 2 [8086:2049] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LM Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 140
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0b.2 System peripheral [0880]: Intel Corporation Sky Lake-E LMS Channel 2 [8086:204a] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMS Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 141
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:b0:0b.3 System peripheral [0880]: Intel Corporation Sky Lake-E LMDP Channel 2 [8086:204b] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMDP Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 142
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0c.0 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2040] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 143
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0c.1 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2041] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 144
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0c.2 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2042] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 145
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:b0:0c.3 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2043] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 146
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0c.4 System peripheral [0880]: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:2044] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E Integrated Memory Controller [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 147
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0c.5 System peripheral [0880]: Intel Corporation Sky Lake-E LM Channel 1 [8086:2045] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LM Channel 1 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 148
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0c.6 System peripheral [0880]: Intel Corporation Sky Lake-E LMS Channel 1 [8086:2046] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMS Channel 1 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 149
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:b0:0c.7 System peripheral [0880]: Intel Corporation Sky Lake-E LMDP Channel 1 [8086:2047] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMDP Channel 1 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 150
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0d.0 System peripheral [0880]: Intel Corporation Sky Lake-E DECS Channel 2 [8086:2048] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E DECS Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 151
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0d.1 System peripheral [0880]: Intel Corporation Sky Lake-E LM Channel 2 [8086:2049] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LM Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 152
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b0:0d.2 System peripheral [0880]: Intel Corporation Sky Lake-E LMS Channel 2 [8086:204a] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMS Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 153
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:b0:0d.3 System peripheral [0880]: Intel Corporation Sky Lake-E LMDP Channel 2 [8086:204b] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E LMDP Channel 2 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 154
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:b1:00.0 Non-Volatile memory controller [0108]: Intel Corporation Optane SSD 900P Series [8086:2700] (prog-if 02 [NVM Express])
+	Subsystem: Intel Corporation Optane SSD 900P Series [8086:3902]
+	Flags: bus master, fast devsel, latency 0, IRQ 157, NUMA node 1, IOMMU group 155
+	Memory at c6f00000 (64-bit, non-prefetchable) [size=16K]
+	Expansion ROM at c6f10000 [disabled] [size=64K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI-X: Enable+ Count=32 Masked-
+	Capabilities: [60] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [150] Virtual Channel
+	Capabilities: [180] Power Budgeting <?>
+	Capabilities: [190] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [270] Device Serial Number 55-cd-2e-41-51-15-cf-e6
+	Capabilities: [2a0] Secondary PCI Express
+	Kernel driver in use: vfio-pci
+	Kernel modules: nvme
+
+0000:b2:00.0 Non-Volatile memory controller [0108]: Intel Corporation Optane SSD 900P Series [8086:2700] (prog-if 02 [NVM Express])
+	Subsystem: Intel Corporation Optane SSD 900P Series [8086:3902]
+	Flags: bus master, fast devsel, latency 0, IRQ 158, NUMA node 1, IOMMU group 156
+	Memory at c6e00000 (64-bit, non-prefetchable) [size=16K]
+	Expansion ROM at c6e10000 [disabled] [size=64K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI-X: Enable+ Count=32 Masked-
+	Capabilities: [60] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [150] Virtual Channel
+	Capabilities: [180] Power Budgeting <?>
+	Capabilities: [190] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [270] Device Serial Number 55-cd-2e-41-51-15-d0-5f
+	Capabilities: [2a0] Secondary PCI Express
+	Kernel driver in use: vfio-pci
+	Kernel modules: nvme
+
+0000:b3:00.0 Non-Volatile memory controller [0108]: Intel Corporation Optane SSD 900P Series [8086:2700] (prog-if 02 [NVM Express])
+	Subsystem: Intel Corporation Optane SSD 900P Series [8086:3902]
+	Flags: bus master, fast devsel, latency 0, IRQ 155, NUMA node 1, IOMMU group 157
+	Memory at c6d00000 (64-bit, non-prefetchable) [size=16K]
+	Expansion ROM at c6d10000 [disabled] [size=64K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI-X: Enable+ Count=32 Masked-
+	Capabilities: [60] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [150] Virtual Channel
+	Capabilities: [180] Power Budgeting <?>
+	Capabilities: [190] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [270] Device Serial Number 55-cd-2e-41-50-7b-31-95
+	Capabilities: [2a0] Secondary PCI Express
+	Kernel driver in use: vfio-pci
+	Kernel modules: nvme
+
+0000:b4:00.0 Non-Volatile memory controller [0108]: Intel Corporation Optane SSD 900P Series [8086:2700] (prog-if 02 [NVM Express])
+	Subsystem: Intel Corporation Optane SSD 900P Series [8086:3902]
+	Flags: bus master, fast devsel, latency 0, IRQ 156, NUMA node 1, IOMMU group 158
+	Memory at c6c00000 (64-bit, non-prefetchable) [size=16K]
+	Expansion ROM at c6c10000 [disabled] [size=64K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI-X: Enable+ Count=32 Masked-
+	Capabilities: [60] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [150] Virtual Channel
+	Capabilities: [180] Power Budgeting <?>
+	Capabilities: [190] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [270] Device Serial Number 55-cd-2e-41-52-4f-7f-66
+	Capabilities: [2a0] Secondary PCI Express
+	Kernel driver in use: vfio-pci
+	Kernel modules: nvme
+
+0000:d8:00.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port A [8086:2030] (rev 05) (prog-if 00 [Normal decode])
+	DeviceName: SLOT 6
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port A [8086:0000]
+	Physical Slot: 6
+	Flags: bus master, fast devsel, latency 0, IRQ 44, NUMA node 1, IOMMU group 159
+	Bus: primary=d8, secondary=d9, subordinate=d9, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: c7700000-c77fffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port A [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot+), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:d8:01.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port B [8086:2031] (rev 05) (prog-if 00 [Normal decode])
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port B [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 45, NUMA node 1, IOMMU group 160
+	Bus: primary=d8, secondary=da, subordinate=da, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: c7600000-c76fffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port B [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot+), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:d8:02.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port C [8086:2032] (rev 05) (prog-if 00 [Normal decode])
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port C [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 46, NUMA node 1, IOMMU group 161
+	Bus: primary=d8, secondary=db, subordinate=db, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: c7500000-c75fffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port C [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot+), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:d8:03.0 PCI bridge [0604]: Intel Corporation Sky Lake-E PCI Express Root Port D [8086:2033] (rev 05) (prog-if 00 [Normal decode])
+	Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port D [8086:0000]
+	Flags: bus master, fast devsel, latency 0, IRQ 47, NUMA node 1, IOMMU group 162
+	Bus: primary=d8, secondary=dc, subordinate=dc, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: c7400000-c74fffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Subsystem: Intel Corporation Sky Lake-E PCI Express Root Port D [8086:0000]
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot+), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Capabilities: [300] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>
+	Kernel driver in use: pcieport
+
+0000:d8:05.0 System peripheral [0880]: Intel Corporation Sky Lake-E VT-d [8086:2034] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E VT-d [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 163
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:d8:05.2 System peripheral [0880]: Intel Corporation Sky Lake-E RAS Configuration Registers [8086:2035] (rev 05)
+	Flags: fast devsel, NUMA node 1, IOMMU group 164
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:d8:05.4 PIC [0800]: Intel Corporation Sky Lake-E IOxAPIC Configuration Registers [8086:2036] (rev 05) (prog-if 20 [IO(X)-APIC])
+	Subsystem: Intel Corporation Sky Lake-E IOxAPIC Configuration Registers [8086:2036]
+	Flags: bus master, fast devsel, latency 0, NUMA node 1, IOMMU group 165
+	Memory at c7800000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+
+0000:d8:0e.0 Performance counters [1101]: Intel Corporation Sky Lake-E KTI 0 [8086:2058] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E KTI 0 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 166
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:d8:0e.1 System peripheral [0880]: Intel Corporation Sky Lake-E UPI Registers [8086:2059] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E UPI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 167
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [100] Vendor Specific Information: ID=0001 Rev=0 Len=0f0 <?>
+
+0000:d8:0f.0 Performance counters [1101]: Intel Corporation Sky Lake-E KTI 0 [8086:2058] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E KTI 0 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 168
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:d8:0f.1 System peripheral [0880]: Intel Corporation Sky Lake-E UPI Registers [8086:2059] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E UPI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 169
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [100] Vendor Specific Information: ID=0001 Rev=0 Len=0f0 <?>
+
+0000:d8:10.0 Performance counters [1101]: Intel Corporation Sky Lake-E KTI 0 [8086:2058] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E KTI 0 [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 170
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: skx_uncore
+
+0000:d8:10.1 System peripheral [0880]: Intel Corporation Sky Lake-E UPI Registers [8086:2059] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E UPI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 171
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [100] Vendor Specific Information: ID=0001 Rev=0 Len=0f0 <?>
+
+0000:d8:12.0 Performance counters [1101]: Intel Corporation Sky Lake-E M3KTI Registers [8086:204c] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M3KTI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 172
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:d8:12.1 Performance counters [1101]: Intel Corporation Sky Lake-E M3KTI Registers [8086:204d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M3KTI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 173
+	Kernel driver in use: skx_uncore
+
+0000:d8:12.2 System peripheral [0880]: Intel Corporation Sky Lake-E M3KTI Registers [8086:204e] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M3KTI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 173
+	Kernel driver in use: skx_uncore
+
+0000:d8:12.4 Performance counters [1101]: Intel Corporation Sky Lake-E M3KTI Registers [8086:204c] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M3KTI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 174
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+0000:d8:12.5 Performance counters [1101]: Intel Corporation Sky Lake-E M3KTI Registers [8086:204d] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M3KTI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 173
+	Kernel driver in use: skx_uncore
+
+0000:d8:15.0 System peripheral [0880]: Intel Corporation Sky Lake-E M2PCI Registers [8086:2018] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M2PCI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 175
+
+0000:d8:15.1 Performance counters [1101]: Intel Corporation Sky Lake-E DDRIO Registers [8086:2088] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E DDRIO Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 175
+	Kernel driver in use: skx_uncore
+
+0000:d8:16.0 System peripheral [0880]: Intel Corporation Sky Lake-E M2PCI Registers [8086:2018] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M2PCI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 176
+
+0000:d8:16.1 Performance counters [1101]: Intel Corporation Sky Lake-E DDRIO Registers [8086:2088] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E DDRIO Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 176
+	Kernel driver in use: skx_uncore
+
+0000:d8:16.4 System peripheral [0880]: Intel Corporation Sky Lake-E M2PCI Registers [8086:2018] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M2PCI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 176
+
+0000:d8:16.5 Performance counters [1101]: Intel Corporation Sky Lake-E DDRIO Registers [8086:2088] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E DDRIO Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 176
+
+0000:d8:17.0 System peripheral [0880]: Intel Corporation Sky Lake-E M2PCI Registers [8086:2018] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E M2PCI Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 177
+
+0000:d8:17.1 Performance counters [1101]: Intel Corporation Sky Lake-E DDRIO Registers [8086:2088] (rev 05)
+	Subsystem: Intel Corporation Sky Lake-E DDRIO Registers [8086:0000]
+	Flags: fast devsel, NUMA node 1, IOMMU group 177
+	Kernel driver in use: skx_uncore
+
+0000:d9:00.0 Non-Volatile memory controller [0108]: Samsung Electronics Co Ltd NVMe SSD Controller SM981/PM981/PM983 [144d:a808] (prog-if 02 [NVM Express])
+	Subsystem: Samsung Electronics Co Ltd SSD 970 EVO Plus 1TB [144d:a801]
+	Flags: bus master, fast devsel, latency 0, IRQ 162, NUMA node 1, IOMMU group 178
+	Memory at c7700000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/32 Maskable- 64bit+
+	Capabilities: [70] Express Endpoint, MSI 00
+	Capabilities: [b0] MSI-X: Enable+ Count=130 Masked-
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [168] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [178] Secondary PCI Express
+	Capabilities: [214] Latency Tolerance Reporting
+	Capabilities: [21c] L1 PM Substates
+	Kernel driver in use: vfio-pci
+	Kernel modules: nvme
+
+0000:da:00.0 Non-Volatile memory controller [0108]: Samsung Electronics Co Ltd NVMe SSD Controller SM981/PM981/PM983 [144d:a808] (prog-if 02 [NVM Express])
+	Subsystem: Samsung Electronics Co Ltd SSD 970 EVO Plus 1TB [144d:a801]
+	Flags: bus master, fast devsel, latency 0, IRQ 159, NUMA node 1, IOMMU group 179
+	Memory at c7600000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/32 Maskable- 64bit+
+	Capabilities: [70] Express Endpoint, MSI 00
+	Capabilities: [b0] MSI-X: Enable+ Count=130 Masked-
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [168] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [178] Secondary PCI Express
+	Capabilities: [214] Latency Tolerance Reporting
+	Capabilities: [21c] L1 PM Substates
+	Kernel driver in use: vfio-pci
+	Kernel modules: nvme
+
+0000:db:00.0 Non-Volatile memory controller [0108]: Samsung Electronics Co Ltd NVMe SSD Controller SM981/PM981/PM983 [144d:a808] (prog-if 02 [NVM Express])
+	Subsystem: Samsung Electronics Co Ltd SSD 970 EVO Plus 1TB [144d:a801]
+	Flags: bus master, fast devsel, latency 0, IRQ 160, NUMA node 1, IOMMU group 180
+	Memory at c7500000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/32 Maskable- 64bit+
+	Capabilities: [70] Express Endpoint, MSI 00
+	Capabilities: [b0] MSI-X: Enable+ Count=130 Masked-
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [168] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [178] Secondary PCI Express
+	Capabilities: [214] Latency Tolerance Reporting
+	Capabilities: [21c] L1 PM Substates
+	Kernel driver in use: vfio-pci
+	Kernel modules: nvme
+
+0000:dc:00.0 Non-Volatile memory controller [0108]: Samsung Electronics Co Ltd NVMe SSD Controller SM981/PM981/PM983 [144d:a808] (prog-if 02 [NVM Express])
+	Subsystem: Samsung Electronics Co Ltd SSD 970 EVO Plus 1TB [144d:a801]
+	Flags: bus master, fast devsel, latency 0, IRQ 161, NUMA node 1, IOMMU group 181
+	Memory at c7400000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/32 Maskable- 64bit+
+	Capabilities: [70] Express Endpoint, MSI 00
+	Capabilities: [b0] MSI-X: Enable+ Count=130 Masked-
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [168] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [178] Secondary PCI Express
+	Capabilities: [214] Latency Tolerance Reporting
+	Capabilities: [21c] L1 PM Substates
+	Kernel driver in use: vfio-pci
+	Kernel modules: nvme
+

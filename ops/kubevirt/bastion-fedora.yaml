@@ -1,23 +1,14 @@
 apiVersion: kubevirt.io/v1
 kind: VirtualMachine
 metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"kubevirt.io/v1alpha3","kind":"VirtualMachine","metadata":{"annotations":{},"labels":{"app":"kargo"},"name":"fedora","namespace":"default"},"spec":{"dataVolumeTemplates":[{"metadata":{"name":"fedora-volume-vda-root","namespace":"default"},"spec":{"accessModes":["ReadWriteOnce"],"capacity":{"storage":"128G"},"config":{"featureGates":["HonorWaitForFirstConsumer"]},"persistentVolumeReclaimPolicy":"Delete","pvc":{"accessModes":["ReadWriteOnce"],"resources":{"limits":{"storage":"128G"},"requests":{"storage":"128G"}},"storageClassName":"microk8s-hostpath"},"source":{"registry":{"imagePullPolicy":"Always","url":"docker://docker.io/containercraft/fedora:latest"}},"storageClassName":"microk8s-hostpath","volumeMode":"Block"}}],"running":true,"template":{"spec":{"accessCredentials":[{"sshPublicKey":{"propagationMethod":{"qemuGuestAgent":{"users":["kc2user"]}},"source":{"secret":{"secretName":"kargo-sshpubkey-kc2user"}}}}],"domain":{"clock":{"timer":{},"utc":{}},"cpu":{"cores":1,"dedicatedCpuPlacement":false,"model":"host-passthrough","sockets":1,"threads":6},"devices":{"autoattachGraphicsDevice":true,"autoattachPodInterface":false,"autoattachSerialConsole":true,"disks":[{"bootOrder":1,"disk":{"bus":"virtio"},"name":"fedora-disk-vda-root"},{"disk":{"bus":"virtio"},"name":"cloudinitdisk"}],"interfaces":[{"bridge":{},"model":"virtio","name":"enp1s0"}],"networkInterfaceMultiqueue":false,"rng":{}},"machine":{"type":"q35"},"resources":{"limits":{"memory":"32G"},"requests":{"devices.kubevirt.io/kvm":"1","memory":"32G"}}},"hostname":"fedora","networks":[{"multus":{"networkName":"nadbr0"},"name":"enp1s0"}],"terminationGracePeriodSeconds":0,"volumes":[{"dataVolume":{"name":"fedora-volume-vda-root"},"name":"fedora-disk-vda-root"},{"cloudInitNoCloud":{"networkData":"version: 2\nethernets:\n  enp1s0:\n    dhcp4: true\n    dhcp6: true\n    dhcp-identifier: mac\n","userData":"#cloud-config\nhostname: fedora\nssh_pwauth: true\ndisable_root: true\nchpasswd:\n  list: |\n    kc2user:kc2user\n  expire: False\nusers:\n  - name: kc2user\n    shell: /bin/bash\n    lock_passwd: false\n    sudo: ['ALL=(ALL) NOPASSWD:ALL']\n    groups: sudo,libvirt,xrdp,docker,ssl-cert\ngrowpart:\n  mode: auto\n  devices: ['/']\n  ignore_growroot_disabled: true\npackage_upgrade: true\npackages:\n  - \"vim\"\n  - \"screenfetch\"\n  - \"qemu-guest-agent\"\n  - \"xrdp\"\n  - \"gnome-tweaks\"\n  - \"@workstation-product-environment\"\nruncmd:\n  - \"mkdir -p /home/kc2user/.ssh\"\n  - \"chown -R kc2user:kc2user /home/kc2user/.ssh\"\n  - \"mkdir -p /home/kc2user/.kube\"\n  - \"chown -R kc2user:kc2user /home/kc2user/.kube\"\n  - \"systemctl enable --now qemu-guest-agent\"\n  - \"systemctl restart qemu-guest-agent\"\n  - \"dnf remove -y pcsc-lite\"\n  - \"systemctl enable --now xrdp\"\n  - \"systemctl stop firewalld\"\n  - \"systemctl disable firewalld\"\n  - \"screenfetch\"\n  - \"/bin/fedora-third-party enable\"\n  - \"touch /.autorelabel\"\n"},"name":"cloudinitdisk"}]}}}}
-    kubevirt.io/latest-observed-api-version: v1
-    kubevirt.io/storage-observed-api-version: v1alpha3
-  creationTimestamp: "2022-11-06T06:33:18Z"
-  generation: 7
-  labels:
-    app: kargo
   name: fedora
   namespace: default
-  resourceVersion: "11604377"
-  uid: 3c4ea39a-a2d7-4947-8723-b81bcf265cfd
+  labels:
+    os: fedora
+    app: kubevirt
 spec:
   dataVolumeTemplates:
   - metadata:
-      creationTimestamp: null
       name: fedora-volume-vda-root
       namespace: default
     spec:
@@ -35,8 +26,6 @@ spec:
           url: docker://docker.io/containercraft/fedora:latest
   running: true
   template:
-    metadata:
-      creationTimestamp: null
     spec:
       accessCredentials:
       - sshPublicKey:
@@ -54,7 +43,7 @@ spec:
         cpu:
           cores: 1
           model: host-passthrough
-          sockets: 1
+          sockets: 2
           threads: 16
         devices:
           autoattachGraphicsDevice: true
@@ -68,6 +57,11 @@ spec:
           - disk:
               bus: virtio
             name: cloudinitdisk
+          hostDevices:
+          - name: vga
+            deviceName: vga.amd.com/wx2100pro
+          - name: audio
+            deviceName: audio.amd.com/wx2100pro
           interfaces:
           - bridge: {}
             model: virtio
@@ -82,17 +76,17 @@ spec:
           requests:
             devices.kubevirt.io/kvm: "1"
             memory: 32G
-      hostname: fedora
       networks:
-      - multus:
+      - name: enp1s0
+        multus:
           networkName: nadbr0
-        name: enp1s0
       terminationGracePeriodSeconds: 0
       volumes:
-      - dataVolume:
+      - name: fedora-disk-vda-root
+        dataVolume:
           name: fedora-volume-vda-root
-        name: fedora-disk-vda-root
-      - cloudInitNoCloud:
+      - name: cloudinitdisk
+        cloudInitNoCloud:
           networkData: |
             version: 2
             ethernets:
@@ -141,37 +135,3 @@ spec:
               - "screenfetch"
               - "/bin/fedora-third-party enable"
               - "touch /.autorelabel"
-        name: cloudinitdisk
-status:
-  conditions:
-  - lastProbeTime: null
-    lastTransitionTime: "2022-11-19T03:55:10Z"
-    status: "True"
-    type: Ready
-  - lastProbeTime: null
-    lastTransitionTime: null
-    message: 'cannot migrate VMI: PVC fedora-volume-vda-root is not shared, live migration
-      requires that all PVCs must be shared (using ReadWriteMany access mode)'
-    reason: DisksNotLiveMigratable
-    status: "False"
-    type: LiveMigratable
-  - lastProbeTime: null
-    lastTransitionTime: "2022-11-19T03:55:26Z"
-    message: Guest agent is offline
-    status: "False"
-    type: AccessCredentialsSynchronized
-  - lastProbeTime: "2022-11-19T03:55:27Z"
-    lastTransitionTime: null
-    status: "True"
-    type: AgentConnected
-  created: true
-  printableStatus: Running
-  ready: true
-  volumeSnapshotStatuses:
-  - enabled: false
-    name: fedora-disk-vda-root
-    reason: 'No VolumeSnapshotClass: Volume snapshots are not configured for this
-      StorageClass [microk8s-hostpath] [fedora-disk-vda-root]'
-  - enabled: false
-    name: cloudinitdisk
-    reason: Snapshot is not supported for this volumeSource type [cloudinitdisk]

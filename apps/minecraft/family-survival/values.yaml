@@ -17,8 +17,8 @@ replicaCount: 1
 ##
 resources:
   requests:
-    memory: 16384M
-    cpu: 12000m
+    memory: 18432M
+    cpu: 18000m
 
 # upgrade strategy type (e.g. Recreate or RollingUpdate)
 strategyType: Recreate
@@ -151,7 +151,7 @@ minecraftServer:
   # Sets the area that non-ops can not edit (0 to disable)
   spawnProtection: 24
   # Max view distance (in chunks).
-  viewDistance: 32
+  viewDistance: 24
   # Define this if you want a specific map generation seed.
   levelSeed:
   # One of: creative, survival, adventure, spectator
@@ -186,7 +186,7 @@ minecraftServer:
   # Check accounts against Minecraft account service.
   onlineMode: true
   # If you adjust this, you may need to adjust resources.requests above to match.
-  memory: 16384M
+  memory: 18432M
   # General JVM options to be passed to the Minecraft server invocation
   jvmOpts: ""
   # Options like -X that need to proceed general JVM options

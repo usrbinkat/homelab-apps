@@ -1,0 +1,150 @@
+apiVersion: kubevirt.io/v1
+kind: VirtualMachine
+metadata:
+  name: windows
+  namespace: default
+  annotations:
+    app: windows
+  labels:
+    app: windows
+spec:
+  dataVolumeTemplates:
+  # metadata:
+  #   name: windows-iso
+  # spec:
+  #   pvc:
+  #     accessModes:
+  #     - ReadWriteMany
+  #     resources:
+  #       requests:
+  #         storage: 8G
+  #     storageClassName: truenas-flash-nfs
+  #   source:
+  #     registry:
+  #       url: "docker://192.168.1.2:32000/usrbinkat/win11:22h2"
+  - metadata:
+      name: windows-volume-c-root
+    spec:
+      pvc:
+        accessModes:
+        - ReadWriteMany
+        resources:
+          requests:
+            storage: 512G
+        storageClassName: truenas-flash-nfs
+      source:
+        blank: {}
+  # metadata:
+  #   name: windows-volume-d-data
+  # spec:
+  #   pvc:
+  #     accessModes:
+  #     - ReadWriteMany
+  #     resources:
+  #       requests:
+  #         storage: 1024G
+  #     storageClassName: truenas-flash-nfs
+  #   source:
+  #     blank: {}
+  runStrategy: Manual
+  template:
+    metadata:
+      labels:
+        app: windows
+      annotations:
+        vm.kubevirt.io/os: "windows11"
+    spec:
+      domain:
+        clock:
+          utc: {}
+          timer:
+            hpet:
+              present: false
+            pit:
+              tickPolicy: delay
+            rtc:
+              tickPolicy: catchup
+            hyperv: {}
+        cpu:
+          model: host-passthrough
+          cores: 16
+          threads: 2
+        firmware:
+          uuid: c8f99fc8-20f5-46c4-85e5-2b841c547cef
+          serial: e4686d2c-6e8d-4335-b8fd-81bee22f4815
+        resources:
+          requests:
+            memory: 64G
+            devices.kubevirt.io/kvm: "1"
+        devices:
+          autoattachGraphicsDevice: true
+          autoattachPodInterface: false
+          autoattachSerialConsole: true
+          disks:
+          - name: windows-disk-c-root
+            bootOrder: 1
+            disk:
+              bus: sata
+          # name: windows-disk-d-data
+          # disk:
+          #   bus: virtio
+          # name: iso
+          # bootOrder: 2
+          # cdrom:
+          #   bus: sata
+          #   readonly: true
+          inputs:
+            - type: tablet
+              bus: usb
+              name: tablet
+          interfaces:
+          - name: eth0
+            macAddress: 9E:5C:2D:0E:86:2B
+            bridge: {}
+            model: virtio
+            #model: e1000e
+          hostDevices:
+          - name: vga
+            deviceName: gpu.nvidia.com/P2200quadro
+          - name: audio
+            deviceName: audio.nvidia.com/P2200quadro
+          tpm: {}
+          rng: {}
+        features:
+          acpi: {}
+          apic: {}
+          smm: {}
+          hyperv:
+            ipi: {}
+            reset: {}
+            vapic: {}
+            synic: {}
+            runtime: {}
+            vpindex: {}
+            relaxed: {}
+            tlbflush: {}
+            frequencies: {}
+            reenlightenment: {}
+            spinlocks:
+              spinlocks: 8191
+            synictimer:
+              direct: {}
+        firmware:
+          bootloader:
+            efi:
+              secureBoot: true
+      terminationGracePeriodSeconds: 0
+      networks:
+      - name: eth0
+        multus:
+          networkName: nadbr0
+      volumes:
+      - name: windows-disk-c-root
+        dataVolume:
+          name: windows-volume-c-root
+      # name: windows-disk-d-data
+      # dataVolume:
+      #   name: windows-volume-d-data
+      # name: iso
+      # dataVolume:
+      #   name: windows-iso

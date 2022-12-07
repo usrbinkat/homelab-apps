@@ -1,0 +1,55 @@
+# - helm repo add democratic-csi https://democratic-csi.github.io/charts/ && helm repo update
+# - helm upgrade --install csi-vault-nfs democratic-csi/democratic-csi --create-namespace --namespace truenas --values ./values.vault-api-nfs.yaml
+
+csiDriver:
+  name: "org.democratic-csi.nfs"
+
+storageClasses:
+- name: truenas-vault-nfs
+  defaultClass: false
+  reclaimPolicy: Delete
+  volumeBindingMode: Immediate
+  allowVolumeExpansion: true
+  parameters:
+    fsType: nfs
+
+  mountOptions:
+  - noatime
+  - nfsvers=4
+  secrets:
+    provisioner-secret:
+    controller-publish-secret:
+    node-stage-secret:
+    node-publish-secret:
+    controller-expand-secret:
+
+      #node:
+      #  kubeletHostPath: "/var/snap/microk8s/common/var/lib/kubelet"
+
+driver:
+  config:
+    driver: freenas-api-nfs
+    instance_id:
+    httpConnection:
+      host: 192.168.1.8
+      apiKey: "1-4DdHqsuRDmxdPVBJyvV4il7K4j1Chsv5IguppnBkywGrldg1reJ0PFEvGQ2PffXI"
+      allowInsecure: true
+      protocol: http
+      port: 80
+    zfs:
+      datasetParentName: vault/nfs/k8s
+      detachedSnapshotsDatasetParentName: vault/nfs/snapshots
+      datasetEnableQuotas: true
+      datasetEnableReservation: false
+      datasetPermissionsMode: "0777"
+      datasetPermissionsUser: 0
+      datasetPermissionsGroup: 0
+    nfs:
+      shareHost: 192.168.1.8
+      shareAlldirs: false
+      shareAllowedHosts: []
+      shareAllowedNetworks: []
+      shareMaprootUser: root
+      shareMaprootGroup: wheel
+      shareMapallUser: ""
+      shareMapallGroup: ""

@@ -1,7 +1,7 @@
 apiVersion: cluster.x-k8s.io/v1beta1
 kind: Cluster
 metadata:
-  name: us-west-1
+  name: z2
   namespace: default
 spec:
   clusterNetwork:
@@ -14,18 +14,18 @@ spec:
   controlPlaneRef:
     apiVersion: controlplane.cluster.x-k8s.io/v1beta1
     kind: KubeadmControlPlane
-    name: us-west-1-control-plane
+    name: z2cp
     namespace: default
   infrastructureRef:
     apiVersion: infrastructure.cluster.x-k8s.io/v1alpha1
     kind: KubevirtCluster
-    name: us-west-1
+    name: z2
     namespace: default
 ---
 apiVersion: infrastructure.cluster.x-k8s.io/v1alpha1
 kind: KubevirtCluster
 metadata:
-  name: us-west-1
+  name: z2
   namespace: default
 spec:
   controlPlaneServiceTemplate:
@@ -35,7 +35,7 @@ spec:
 apiVersion: infrastructure.cluster.x-k8s.io/v1alpha1
 kind: KubevirtMachineTemplate
 metadata:
-  name: us-west-1-control-plane
+  name: z2cp
   namespace: default
 spec:
   template:
@@ -44,7 +44,6 @@ spec:
         metadata:
           namespace: default
         spec:
-          runStrategy: Always
           dataVolumeTemplates:
           - metadata:
               name: capi-cp-volume
@@ -53,15 +52,14 @@ spec:
               pvc:
                 storageClassName: truenas-optane-nfs
                 accessModes:
-                - ReadWriteOnce
+                - ReadWriteMany
                 resources:
-                  limits:
-                    storage: 32G
                   requests:
-                    storage: 32G
+                    storage: 64G
               source:
-                registry:
-                  url: docker://quay.io/capk/ubuntu-2004-container-disk:v1.23.10
+                pvc:
+                  name: ccio-ubuntu-latest
+                  namespace: kargo
           template:
             spec:
               accessCredentials:
@@ -96,13 +94,13 @@ spec:
 apiVersion: controlplane.cluster.x-k8s.io/v1beta1
 kind: KubeadmControlPlane
 metadata:
-  name: us-west-1-control-plane
+  name: z2cp
   namespace: default
 spec:
   kubeadmConfigSpec:
     clusterConfiguration:
       networking:
-        dnsDomain: us-west-1.capi.home.arpa
+        dnsDomain: z2.home.arpa
         podSubnet: 10.243.0.0/16
         serviceSubnet: 10.95.0.0/16
     initConfiguration:
@@ -115,15 +113,15 @@ spec:
     infrastructureRef:
       apiVersion: infrastructure.cluster.x-k8s.io/v1alpha1
       kind: KubevirtMachineTemplate
-      name: us-west-1-control-plane
+      name: z2cp
       namespace: default
-  replicas: 3
+  replicas: 1
   version: v1.23.10
 ---
 apiVersion: infrastructure.cluster.x-k8s.io/v1alpha1
 kind: KubevirtMachineTemplate
 metadata:
-  name: us-west-1-md-0
+  name: z2dp
   namespace: default
 spec:
   template:
@@ -132,7 +130,6 @@ spec:
         metadata:
           namespace: default
         spec:
-          runStrategy: Always
           dataVolumeTemplates:
           - metadata:
               name: capi-md-volume
@@ -141,15 +138,14 @@ spec:
               pvc:
                 storageClassName: truenas-optane-nfs
                 accessModes:
-                - ReadWriteOnce
+                - ReadWriteMany
                 resources:
-                  limits:
-                    storage: 32G
                   requests:
-                    storage: 32G
+                    storage: 64G
               source:
-                registry:
-                  url: docker://quay.io/capk/ubuntu-2004-container-disk:v1.23.10
+                pvc:
+                  name: ccio-ubuntu-latest
+                  namespace: kargo
           template:
             spec:
               accessCredentials:
@@ -184,7 +180,7 @@ spec:
 apiVersion: bootstrap.cluster.x-k8s.io/v1beta1
 kind: KubeadmConfigTemplate
 metadata:
-  name: us-west-1-md-0
+  name: z2dp
   namespace: default
 spec:
   template:
@@ -196,10 +192,10 @@ spec:
 apiVersion: cluster.x-k8s.io/v1beta1
 kind: MachineDeployment
 metadata:
-  name: us-west-1-md-0
+  name: z2dp
   namespace: default
 spec:
-  clusterName: us-west-1
+  clusterName: z2
   replicas: 3
   selector:
     matchLabels: null
@@ -209,12 +205,12 @@ spec:
         configRef:
           apiVersion: bootstrap.cluster.x-k8s.io/v1beta1
           kind: KubeadmConfigTemplate
-          name: us-west-1-md-0
+          name: z2dp
           namespace: default
-      clusterName: us-west-1
+      clusterName: z2
       infrastructureRef:
         apiVersion: infrastructure.cluster.x-k8s.io/v1alpha1
         kind: KubevirtMachineTemplate
-        name: us-west-1-md-0
+        name: z2dp
         namespace: default
       version: v1.23.10

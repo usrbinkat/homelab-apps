@@ -1,0 +1,19 @@
+---
+apiVersion: cdi.kubevirt.io/v1beta1
+kind: DataVolume
+metadata:
+  name: ubuntu-capi-image
+  namespace: default
+spec:
+  source:
+    registry:
+      url: docker://quay.io/capk/ubuntu-2004-container-disk:v1.23.10
+  pvc:
+    storageClassName: truenas-vault-nfs
+    accessModes:
+    - ReadWriteOnce
+    resources:
+      limits:
+        storage: 32G
+      requests:
+        storage: 32G

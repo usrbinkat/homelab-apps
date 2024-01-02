@@ -1,0 +1,9 @@
+apiVersion: kubelet.config.k8s.io/v1beta1
+kind: KubeletConfiguration
+address: "192.168.1.71"
+port: 6443
+serializeImagePulls: true
+featureGates:
+    Back2TheFuture: true
+    DrEmmettBrown: true
+    FluxCapacitor: "100%"

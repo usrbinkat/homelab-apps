@@ -1,0 +1,20 @@
+# build log
+
+talosctl apply-config --insecure \
+    --endpoints 192.168.1.249 \
+    --nodes 192.168.1.249 \
+    --file 71.controlplane.yaml
+
+talosctl bootstrap \
+    --endpoints 192.168.1.71 \
+    --nodes 192.168.1.71
+
+talosctl apply-config --insecure \
+    --endpoints 192.168.1.251 \
+    --nodes 192.168.1.251 \
+    --file 72.worker.yaml
+
+talosctl apply-config --insecure \
+    --endpoints 192.168.1.253 \
+    --nodes 192.168.1.253 \
+    --file 74.worker.yaml \

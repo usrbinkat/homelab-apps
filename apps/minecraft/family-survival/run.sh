@@ -1,1 +1,1 @@
-helm upgrade --install minecraft-family --namespace minecraft itzg/minecraft --values ./values.yaml
+helm upgrade --install minecraft-family-survival --namespace minecraft itzg/minecraft --values ./values.yaml

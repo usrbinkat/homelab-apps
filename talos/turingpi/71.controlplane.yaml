@@ -1,0 +1,118 @@
+version: v1alpha1
+debug: false
+persist: true
+machine:
+    type: controlplane
+    token: adym7q.9lct1dnddg60ngaa
+    certSANs:
+        - api.k8s.turingpi2.home.arpa
+        - 192.168.1.71
+    kubelet:
+        image: ghcr.io/siderolabs/kubelet:v1.28.5
+    network:
+      hostname: cm401
+      nameservers:
+          - 8.8.8.8
+          - 1.1.1.1
+          - 192.168.1.1
+      interfaces:
+          - interface: br0
+            addresses:
+              - 192.168.1.71/24
+            routes:
+              - network: 0.0.0.0/0
+                gateway: 192.168.1.1
+                metric: 1024
+            mtu: 1500
+            bridge:
+                interfaces:
+                    - enxe45f01d057bd
+                stp:
+                    enabled: true
+      extraHostEntries:
+          - ip: 192.168.1.71
+            aliases:
+              - cm401
+              - cm401.turingpi2.home.arpa
+          - ip: 192.168.1.72
+            aliases:
+              - cm402
+              - cm402.turingpi2.home.arpa
+          - ip: 192.168.1.73
+            aliases:
+              - cm403
+              - cm403.turingpi2.home.arpa
+          - ip: 192.168.1.74
+            aliases:
+              - cm404
+              - cm404.turingpi2.home.arpa
+    install:
+        disk: /dev/mmcblk0
+        image: ghcr.io/siderolabs/installer:latest
+        wipe: true
+        extraKernelArgs:
+            - talos.platform=metal
+            - reboot=k
+    features:
+        rbac: true
+        stableHostname: false
+        apidCheckExtKeyUsage: true
+        diskQuotaSupport: true
+        kubePrism:
+            enabled: false
+        kubernetesTalosAPIAccess:
+            enabled: true
+            allowedRoles:
+                - os:reader
+            allowedKubernetesNamespaces:
+                - default
+                - konductor
+                - kube-system
+    controlPlane:
+        scheduler:
+            disabled: false
+    time:
+        disabled: true
+        servers:
+            - time.cloudflare.com
+    ca:
+        crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJQekNCOHFBREFnRUNBaEVBejF3SGdTTENyYW9KamVpaGdLV01MakFGQmdNclpYQXdFREVPTUF3R0ExVUUKQ2hNRmRHRnNiM013SGhjTk1qTXhNakl6TURJeU5UVTFXaGNOTXpNeE1qSXdNREl5TlRVMVdqQVFNUTR3REFZRApWUVFLRXdWMFlXeHZjekFxTUFVR0F5dGxjQU1oQU5pMWw0WWdXRHNHNDhnc1NhU28zcnpxT2ZsWFA2cnR1VExzCmszMjZSM25BbzJFd1h6QU9CZ05WSFE4QkFmOEVCQU1DQW9Rd0hRWURWUjBsQkJZd0ZBWUlLd1lCQlFVSEF3RUcKQ0NzR0FRVUZCd01DTUE4R0ExVWRFd0VCL3dRRk1BTUJBZjh3SFFZRFZSME9CQllFRkhQalprYkg1NVJxS1V4cgpFa05VQ21ZRmhIS1BNQVVHQXl0bGNBTkJBTzdMTllHMjB0ZUZvbGJjaTJDRXFqeTBsdUIwTS8xTGxud1RaL2RuCmQ3dC8rU1JTNWI3RkZBYlBYOFhZMFQ4SzJGTkRTTUNZTnV4Tk5jUTZiSWJCeFFFPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+        key: LS0tLS1CRUdJTiBFRDI1NTE5IFBSSVZBVEUgS0VZLS0tLS0KTUM0Q0FRQXdCUVlESzJWd0JDSUVJTUNlVHVGWHdMdXNoQ2hWUDNwU1NYR3Z4eGE2b0pRcjZiMEFqRzlSc0l4VQotLS0tLUVORCBFRDI1NTE5IFBSSVZBVEUgS0VZLS0tLS0K
+cluster:
+    clusterName: turingpi2
+    allowSchedulingOnControlPlanes: true
+    controlPlane:
+        endpoint: https://192.168.1.71:6443
+    network:
+        dnsDomain: cluster.local
+        podSubnets:
+            - 10.244.0.0/16
+        serviceSubnets:
+            - 10.96.0.0/12
+    token: r3ndqu.da5cy86ypcvx1vr9
+    id: zxW-_L266M1Yp0sW5CajuhY7VJ0G7yt4FIiD7Hcxq4c=
+    secret: GT2MQzaY3kFWH0WZWT8O1AaWbhQMzxUroG8BPwP89OI=
+    secretboxEncryptionSecret: qwmlm7dJikuqn4rfti78aSgq8aTkkMlup4tp6rzKARw=
+    ca:
+        crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJpakNDQVRDZ0F3SUJBZ0lSQUxmdzVMeU5BV05oaGdVNCtQbElvK0F3Q2dZSUtvWkl6ajBFQXdJd0ZURVQKTUJFR0ExVUVDaE1LYTNWaVpYSnVaWFJsY3pBZUZ3MHlNekV5TWpNd01qSTFOVFZhRncwek16RXlNakF3TWpJMQpOVFZhTUJVeEV6QVJCZ05WQkFvVENtdDFZbVZ5Ym1WMFpYTXdXVEFUQmdjcWhrak9QUUlCQmdncWhrak9QUU1CCkJ3TkNBQVJmSERQNFdKU3ZISHE5TEY1djVmekxaVFJFV09YUE9sRWhmR2ZnTW9WWGliL2lFUVdpaFlYVEFpYzEKSjVnajRIU3llQ0JFTzdqQXJjcTA4TGlIVGl3WW8yRXdYekFPQmdOVkhROEJBZjhFQkFNQ0FvUXdIUVlEVlIwbApCQll3RkFZSUt3WUJCUVVIQXdFR0NDc0dBUVVGQndNQ01BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0hRWURWUjBPCkJCWUVGR1Q2cUNBUk5ITHgza2RWVWczbVYzckpPMy94TUFvR0NDcUdTTTQ5QkFNQ0EwZ0FNRVVDSUdBV2tlREcKQ0U1VEFDcUhyengzcnQzN3pKVG9qV21IL21RS1drZ2dTaWJYQWlFQWhFVWV1bzJhbEc0ejFHUWdzWnRLc1Z6cQpiVE5xSFdCUGdMMU9Lbk0yNW40PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+        key: LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU1iZElmWlpScmYzeEZsMEgwYUZEYkVqSTFGOStkeGRrWThWMXBmN2JTb0xvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFWHh3eitGaVVyeHg2dlN4ZWIrWDh5MlUwUkZqbHp6cFJJWHhuNERLRlY0bS80aEVGb29XRgowd0luTlNlWUkrQjBzbmdnUkR1NHdLM0t0UEM0aDA0c0dBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo=
+    etcd:
+        ca:
+            crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJmVENDQVNPZ0F3SUJBZ0lRTXgvZE4wQmhPZUlCYWd5TVppMzBuREFLQmdncWhrak9QUVFEQWpBUE1RMHcKQ3dZRFZRUUtFd1JsZEdOa01CNFhEVEl6TVRJeU16QXlNalUxTlZvWERUTXpNVEl5TURBeU1qVTFOVm93RHpFTgpNQXNHQTFVRUNoTUVaWFJqWkRCWk1CTUdCeXFHU000OUFnRUdDQ3FHU000OUF3RUhBMElBQkdBeitTVnYrbU9iCmMxNzIyanhyVzdmbW5PdmVpaEhpM3ZtdGRXR3FOYWR0TUhURnJETUZlUHd1WVJJTnVUVHVVcS9DNFQvUzZPQVEKZUpBb0VoUGhJa21qWVRCZk1BNEdBMVVkRHdFQi93UUVBd0lDaERBZEJnTlZIU1VFRmpBVUJnZ3JCZ0VGQlFjRApBUVlJS3dZQkJRVUhBd0l3RHdZRFZSMFRBUUgvQkFVd0F3RUIvekFkQmdOVkhRNEVGZ1FVbEJubC9xTGdxSWVhClU3dWR3aWJjZWx1MnJJOHdDZ1lJS29aSXpqMEVBd0lEU0FBd1JRSWdKY2NKcDNpT0NMcGhLckFzb1VmSEdOTWEKZkNxZHhVSGNONkJCdUVSNCtLSUNJUUNqZk9tbG9XbzZDc0Rwc2pwNUo5dGxTNUUrUlNzYW9oK0g0aTNkVVBTdQpVQT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+            key: LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUFCbDBLSmF3ODRHN0R6T1k1VHR2VnVZeHdsRmVuaUJNbVdieUlReGVpbFdvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFWURQNUpXLzZZNXR6WHZiYVBHdGJ0K2FjNjk2S0VlTGUrYTExWWFvMXAyMHdkTVdzTXdWNAovQzVoRWcyNU5PNVNyOExoUDlMbzRCQjRrQ2dTRStFaVNRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo=
+    aggregatorCA:
+        crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJYekNDQVFXZ0F3SUJBZ0lRUkdvaE9zMzZSRXpRVU5iU2tMSzJVekFLQmdncWhrak9QUVFEQWpBQU1CNFgKRFRJek1USXlNekF5TWpVMU5Wb1hEVE16TVRJeU1EQXlNalUxTlZvd0FEQlpNQk1HQnlxR1NNNDlBZ0VHQ0NxRwpTTTQ5QXdFSEEwSUFCQ0xqUkYreUhKeXJKTm5nUXBVWENwdFZsNU5UQU94Ym9wL1JhdnZNTWFIS0srV1pIRHF2Cm9iaHEzVTNaTHViaStjY0xJY1F2aDNnTjVoVGZ1OHRMS0g2allUQmZNQTRHQTFVZER3RUIvd1FFQXdJQ2hEQWQKQmdOVkhTVUVGakFVQmdnckJnRUZCUWNEQVFZSUt3WUJCUVVIQXdJd0R3WURWUjBUQVFIL0JBVXdBd0VCL3pBZApCZ05WSFE0RUZnUVVEUTRld3laakU5VkNpanZOSURNTThnNTBPc2N3Q2dZSUtvWkl6ajBFQXdJRFNBQXdSUUlnCkZWenhlQzBya0N0K04zaks5TGRtMllYQmZleVlyK0lRenFXRzh1QVNaRVlDSVFEYmszY2JjbU05UW12UWF3ZkwKSTdJVTRINEdwRkNYZjFmTWpMSzdFMExJb2c9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+        key: LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUdweDhXS1NodnJScXloRDZBK2VEWTdicG5wSk9JT2hnKzQybklCR3pGaFBvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFSXVORVg3SWNuS3NrMmVCQ2xSY0ttMVdYazFNQTdGdWluOUZxKzh3eG9jb3I1WmtjT3EraAp1R3JkVGRrdTV1TDV4d3NoeEMrSGVBM21GTis3eTBzb2ZnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo=
+    serviceAccount:
+        key: LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU1yakZLbnRBQnZXN1BObUUyOTB2aTRWZ0IwdURCVHY2Z0FyVitVbjlPMjRvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFZVpLK1lpZitBbXlLK003SkZUWVJSOUVtN3J2ek1XaSsvT2lwenovNEUzZld4TE1Ca2ZwTQo2dzZmTGk2NU1GM3R3NUs3RHBtNU0vWEZzWXZVWU1aa2l3PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo=
+    apiServer:
+        disablePodSecurityPolicy: true
+        image: registry.k8s.io/kube-apiserver:v1.28.5
+        certSANs:
+            - 192.168.1.71
+            - api.k8s.turingpi2.home.arpa
+    discovery:
+        enabled: true
+        registries:
+            kubernetes: {}
+            service: {}

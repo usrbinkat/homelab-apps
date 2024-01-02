@@ -1,0 +1,244 @@
+node: 
+metadata:
+    namespace: network
+    type: LinkStatuses.net.talos.dev
+    id: bond0
+    version: 1
+    owner: network.LinkStatusController
+    phase: running
+    created: 1970-01-01T00:00:14Z
+    updated: 1970-01-01T00:00:14Z
+spec:
+    index: 2
+    type: ether
+    linkIndex: 0
+    flags: BROADCAST,MASTER,MULTICAST
+    hardwareAddr: a2:8d:cd:fb:3b:5a
+    permanentAddr: ""
+    broadcastAddr: ff:ff:ff:ff:ff:ff
+    mtu: 1500
+    queueDisc: noop
+    operationalState: down
+    kind: bond
+    slaveKind: ""
+    driver: bonding
+    driverVersion: 6.1.69-talos
+    firmwareVersion: "2"
+    linkState: false
+    speedMbit: 4294967295
+    port: Other
+    duplex: Unknown
+    bondMaster:
+        mode: balance-rr
+        xmitHashPolicy: layer2
+        lacpRate: slow
+        arpValidate: none
+        arpAllTargets: any
+        primaryReselect: always
+        failOverMac: 0
+        resendIgmp: 1
+        lpInterval: 1
+        packetsPerSlave: 1
+        numPeerNotif: 1
+        tlbLogicalLb: 1
+        useCarrier: true
+---
+node: 
+metadata:
+    namespace: network
+    type: LinkStatuses.net.talos.dev
+    id: dummy0
+    version: 1
+    owner: network.LinkStatusController
+    phase: running
+    created: 1970-01-01T00:00:14Z
+    updated: 1970-01-01T00:00:14Z
+spec:
+    index: 3
+    type: ether
+    linkIndex: 0
+    flags: BROADCAST,NOARP
+    hardwareAddr: 46:ed:e0:c8:5a:ad
+    permanentAddr: ""
+    broadcastAddr: ff:ff:ff:ff:ff:ff
+    mtu: 1500
+    queueDisc: noop
+    operationalState: down
+    kind: dummy
+    slaveKind: ""
+    driver: dummy
+    driverVersion: 6.1.69-talos
+    linkState: false
+    port: Other
+    duplex: Unknown
+---
+node: 
+metadata:
+    namespace: network
+    type: LinkStatuses.net.talos.dev
+    id: enxe45f01d057bd
+    version: 4
+    owner: network.LinkStatusController
+    phase: running
+    created: 1970-01-01T00:00:14Z
+    updated: 1970-01-01T00:00:18Z
+spec:
+    index: 4
+    type: ether
+    linkIndex: 0
+    flags: UP,BROADCAST,RUNNING,MULTICAST,LOWER_UP
+    hardwareAddr: e4:5f:01:d0:57:bd
+    permanentAddr: e4:5f:01:d0:57:bd
+    broadcastAddr: ff:ff:ff:ff:ff:ff
+    mtu: 1500
+    queueDisc: mq
+    operationalState: up
+    kind: ""
+    slaveKind: ""
+    driver: bcmgenet
+    driverVersion: 6.1.69-talos
+    linkState: true
+    speedMbit: 1000
+    port: TwistedPair
+    duplex: Full
+---
+node: 
+metadata:
+    namespace: network
+    type: LinkStatuses.net.talos.dev
+    id: ip6tnl0
+    version: 1
+    owner: network.LinkStatusController
+    phase: running
+    created: 1970-01-01T00:00:14Z
+    updated: 1970-01-01T00:00:14Z
+spec:
+    index: 8
+    type: tunnel6
+    linkIndex: 0
+    flags: NOARP
+    hardwareAddr: "00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00"
+    permanentAddr: 0a:17:09:bb:f8:5a
+    broadcastAddr: "00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00"
+    mtu: 1452
+    queueDisc: noop
+    operationalState: down
+    kind: ip6tnl
+    slaveKind: ""
+    driver: ip6tnl
+    driverVersion: 6.1.69-talos
+    linkState: false
+    port: Other
+    duplex: Unknown
+---
+node: 
+metadata:
+    namespace: network
+    type: LinkStatuses.net.talos.dev
+    id: lo
+    version: 2
+    owner: network.LinkStatusController
+    phase: running
+    created: 1970-01-01T00:00:14Z
+    updated: 1970-01-01T00:00:14Z
+spec:
+    index: 1
+    type: loopback
+    linkIndex: 0
+    flags: UP,LOOPBACK,RUNNING,LOWER_UP
+    hardwareAddr: "00:00:00:00:00:00"
+    permanentAddr: ""
+    broadcastAddr: "00:00:00:00:00:00"
+    mtu: 65536
+    queueDisc: noqueue
+    operationalState: unknown
+    kind: ""
+    slaveKind: ""
+    linkState: true
+    port: Other
+    duplex: Unknown
+---
+node: 
+metadata:
+    namespace: network
+    type: LinkStatuses.net.talos.dev
+    id: sit0
+    version: 1
+    owner: network.LinkStatusController
+    phase: running
+    created: 1970-01-01T00:00:14Z
+    updated: 1970-01-01T00:00:14Z
+spec:
+    index: 7
+    type: sit
+    linkIndex: 0
+    flags: NOARP
+    hardwareAddr: "00:00:00:00"
+    permanentAddr: ""
+    broadcastAddr: "00:00:00:00"
+    mtu: 1480
+    queueDisc: noop
+    operationalState: down
+    kind: sit
+    slaveKind: ""
+    driver: sit
+    driverVersion: 6.1.69-talos
+    linkState: false
+    port: Other
+    duplex: Unknown
+---
+node: 
+metadata:
+    namespace: network
+    type: LinkStatuses.net.talos.dev
+    id: teql0
+    version: 1
+    owner: network.LinkStatusController
+    phase: running
+    created: 1970-01-01T00:00:14Z
+    updated: 1970-01-01T00:00:14Z
+spec:
+    index: 5
+    type: void
+    linkIndex: 0
+    flags: NOARP
+    hardwareAddr: ""
+    permanentAddr: ""
+    broadcastAddr: ""
+    mtu: 1500
+    queueDisc: noop
+    operationalState: down
+    kind: ""
+    slaveKind: ""
+    linkState: false
+    port: Other
+    duplex: Unknown
+---
+node: 
+metadata:
+    namespace: network
+    type: LinkStatuses.net.talos.dev
+    id: tunl0
+    version: 1
+    owner: network.LinkStatusController
+    phase: running
+    created: 1970-01-01T00:00:14Z
+    updated: 1970-01-01T00:00:14Z
+spec:
+    index: 6
+    type: ipip
+    linkIndex: 0
+    flags: NOARP
+    hardwareAddr: "00:00:00:00"
+    permanentAddr: ""
+    broadcastAddr: "00:00:00:00"
+    mtu: 1480
+    queueDisc: noop
+    operationalState: down
+    kind: ipip
+    slaveKind: ""
+    driver: ipip
+    driverVersion: 6.1.69-talos
+    linkState: false
+    port: Other
+    duplex: Unknown

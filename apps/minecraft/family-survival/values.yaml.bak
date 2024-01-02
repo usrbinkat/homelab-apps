@@ -122,7 +122,7 @@ minecraftServer:
   spongeVersion: null
   type: SPIGOT
   vanillaTweaksShareCodes: []
-  version: 1.20.1
+  version: 1.19.1
   viewDistance: 24
   whitelist: usrbinkat,gardengnomegal8,microbeaster,paddyjohn
   worldSaveName: world
@@ -130,7 +130,7 @@ nodeSelector: {}
 persistence:
   dataDir:
     enabled: true
-    existingClaim: minecraft-survival-hostpath-data
+    existingClaim: minecraft-survival-data
 podAnnotations: {}
 rconServiceAnnotations: {}
 readinessProbe:

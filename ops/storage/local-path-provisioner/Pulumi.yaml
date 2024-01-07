@@ -1,0 +1,6 @@
+name: rancher-localpath-provisioner
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: A pulumi python program to deploy rancher local-path-provisioner on kubernetes using the pulumi kubernetes kustomize resource type with a remote manifest

@@ -1,0 +1,6 @@
+name: minecraft-survival
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: A pulumi python program to deploy itzg/minecraft server from helm chart

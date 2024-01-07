@@ -465,18 +465,18 @@ cluster:
               # Configuration is an embedded configuration object to be used as the plugin's
               configuration:
                 apiVersion: pod-security.admission.config.k8s.io/v1alpha1
-                defaults:
-                    audit: restricted
-                    audit-version: latest
-                    enforce: baseline
-                    enforce-version: latest
-                    warn: restricted
-                    warn-version: latest
-                exemptions:
-                    namespaces:
-                        - kube-system
-                    runtimeClasses: []
-                    usernames: []
+                defaults: {}
+                #   audit: restricted
+                #   audit-version: latest
+                #   enforce: baseline
+                #   enforce-version: latest
+                #   warn: restricted
+                #   warn-version: latest
+                exemptions: {}
+                #   namespaces:
+                #       - kube-system
+                #   runtimeClasses: []
+                #   usernames: []
                 kind: PodSecurityConfiguration
         # Configure the API server audit policy.
         auditPolicy:

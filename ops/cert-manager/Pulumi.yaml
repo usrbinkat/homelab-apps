@@ -1,0 +1,6 @@
+name: cert-manager
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: A pulumi python program to deploy cert-manager from helm chart

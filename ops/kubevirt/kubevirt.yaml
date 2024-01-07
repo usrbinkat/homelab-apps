@@ -4,10 +4,6 @@ metadata:
   name: kubevirt
   namespace: kubevirt
 spec:
-  certificateRotateStrategy: {}
-  customizeComponents: {}
-  imagePullPolicy: IfNotPresent
-  workloadUpdateStrategy: {}
   configuration:
     developerConfiguration:
       featureGates:
@@ -16,8 +12,6 @@ spec:
       pciHostDevices:
       - pciVendorSelector: "1000:0097"
         resourceName: "dell.com/hba330"
-      - pciVendorSelector: "1c5c:1639"
-        resourceName: "sk.hynix.com/nvme512G"
       - pciVendorSelector: "8086:3902"
         resourceName: "optane.intel.com/900P"
       - pciVendorSelector: "8086:2700"
@@ -42,3 +36,9 @@ spec:
         resourceName: "audio.amd.com/wx2100pro"
       - pciVendorSelector: "1028:aae0"
         resourceName: "audio.amd.com/wx2100sub"
+#     - pciVendorSelector: "1c5c:1639"
+#       resourceName: "sk.hynix.com/nvme512G"
+  certificateRotateStrategy: {}
+  customizeComponents: {}
+  imagePullPolicy: IfNotPresent
+  workloadUpdateStrategy: {}

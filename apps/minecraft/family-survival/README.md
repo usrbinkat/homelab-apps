@@ -7,17 +7,18 @@
 ├── __main__.py                   # Main entry point of the Pulumi IaC program
 │
 ├── src                           # Source directory containing the project's main code
-│   ├── config                    # Configuration directory for storing constants and configs
-│   │   ├── constants.py          # Defines constants used throughout the project
-│   │   └── __init__.py           # Initializes the config package, making Python treat the directory as a package
 │   │
-│   └── kubernetes                # Contains Kubernetes resources and related logic
-│       ├── helm_release.py       # Defines the logic for configuring and deploying Helm releases
-│       ├── namespace.py          # Contains the logic for creating and managing Kubernetes namespaces
-│       ├── persistent_volume.py  # Manages Kubernetes Persistent Volumes and Persistent Volume Claims
-│       └── __init__.py           # Initializes the kubernetes package, making Python treat the directory as a package
+│   ├── config                    # Project constants and common tunables
+│   │   ├── __init__.py           # Initializes the directory as a package
+│   │   └── constants.py          # Defines constants used throughout the project
+│   │
+│   └── kubernetes                # Kubernetes deployment resource and logic
+│       ├── __init__.py           # Initializes the directory as a package
+│       ├── helm_release.py       # Helm Release configuration and deployment logic
+│       ├── namespace.py          # Namespace configuration and deployment logic
+│       └── persistent_volume.py  # Persistent Volume and Persistent Volume Claim resources
 │
-├── requirements.txt              # Lists Python dependencies for the project
-└── .envrc                        # Environment configuration for tools like direnv
+├── requirements.txt              # Python dependencies for the codebase
+└── .envrc                        # Local direnv config for environment variables
 
 ```

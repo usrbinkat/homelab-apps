@@ -51,8 +51,6 @@ helm_release = configure_helm_release(
 )
 
 # Metadata Collection and Export
-pulumi.export("minecraft_service_port", helm_release.values["minecraftServer"]["nodePort"])
-pulumi.export("helm_release_name", helm_release.name)
 metadata = collect_metadata(helm_release)
 for key, value in metadata.items():
     pulumi.export(key, value)

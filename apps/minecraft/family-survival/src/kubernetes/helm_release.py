@@ -100,7 +100,6 @@ def collect_metadata(helm_release):
     Returns:
         dict: A dictionary containing formatted metadata.
     """
-    mc_chart = helm_release.status["status"]
     mc_version = helm_release.values["minecraftServer"]["version"]
     mc_status = pulumi.Output.all(mc_version).apply(lambda args: f"minecraft-{args[0]}")
 
@@ -110,7 +109,9 @@ def collect_metadata(helm_release):
     helm_chart_status = pulumi.Output.all(hcs_opts, hcs_chart, hcs_version).apply(lambda args: f"{args[0]}/{args[1]}-{args[2]}")
 
     return {
-        'status': mc_chart,
-        'minecraft': mc_status,
-        'helm_chart': helm_chart_status
+        'status': helm_release.status["status"],
+        'helm_release_name': helm_release.name,
+        'minecraft_service_port': helm_release.values["minecraftServer"]["nodePort"],
+        'helm_chart': helm_chart_status,
+        'minecraft': mc_status
     }

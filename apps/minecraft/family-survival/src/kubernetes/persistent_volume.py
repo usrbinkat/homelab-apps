@@ -62,6 +62,7 @@ def create_persistent_volume_claim(name, namespace_name, storage_class, size, pr
     data_pvc = kubernetes.core.v1.PersistentVolumeClaim(
         f"{name}-pvc-data",
         metadata=kubernetes.meta.v1.ObjectMetaArgs(
+            name=f"{name}-pvc-data",
             namespace=namespace_name,
             labels=const.NAMESPACE_LABELS
         ),

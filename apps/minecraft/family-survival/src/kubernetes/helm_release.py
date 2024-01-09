@@ -62,6 +62,7 @@ def configure_helm_release(namespace_resource, pvc_name, storage_class, provider
         'minecraft-release',
         chart='minecraft',
         version=latest_version,
+        name='minecraft-family-survival',
         namespace=namespace_resource.metadata.name,
         values={
             "minecraftServer": minecraft_config,
@@ -90,6 +91,50 @@ def configure_helm_release(namespace_resource, pvc_name, storage_class, provider
         )
     )
     return helm_release
+
+def public_loadbalancer(namespace, helm_release, provider):
+
+    # Correctly handle the helm_release_name if it's an Output object
+    def construct_app_label(name):
+        return f"{name}-minecraft"
+
+    app_label = helm_release.name.apply(construct_app_label)
+
+    """Configure and deploy a LoadBalancer for the minecraft service using inlets-operator"""
+    minecraft_service = kubernetes.core.v1.Service(
+        "minecraft-loadbalancer-service-public",
+        metadata=kubernetes.meta.v1.ObjectMetaArgs(
+            name="minecraft-loadbalancer-service-public",
+            namespace=namespace.metadata.name,
+            labels=const.NAMESPACE_LABELS,
+            annotations={
+                "operator.inlets.dev/manage": "1",
+                "metallb.universe.tf/address-pool": "0"
+            }
+        ),
+        spec=kubernetes.core.v1.ServiceSpecArgs(
+            type="LoadBalancer",
+            selector={"app": app_label},
+            ports=[kubernetes.core.v1.ServicePortArgs(
+                name="minecraft",
+                port=25565,
+                protocol="TCP"
+            )]
+        ),
+        opts=pulumi.ResourceOptions(
+            provider=provider,
+            depends_on=[helm_release],
+            custom_timeouts=(
+                pulumi.CustomTimeouts(
+                    create="10m",
+                    update="10m",
+                    delete="5m"
+                )
+            )
+        )
+    )
+
+    return minecraft_service, app_label
 
 def collect_metadata(helm_release):
     """Collect and format metadata from the Helm release.

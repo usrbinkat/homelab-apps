@@ -2,7 +2,7 @@ import pulumi
 import pulumi_kubernetes as kubernetes
 
 from src.kubernetes.namespace import create_namespace
-from src.kubernetes.helm_release import configure_helm_release, collect_metadata
+from src.kubernetes.helm_release import configure_helm_release, collect_metadata, public_loadbalancer
 from src.kubernetes.persistent_volume import create_persistent_volume, create_persistent_volume_claim
 import src.config.constants as const
 
@@ -48,6 +48,13 @@ helm_release = configure_helm_release(
     storage_class,
     k8s_provider,
     const.MINECRAFT_SERVER_CONFIGURATION
+)
+
+# Create Public Loadbalancer for Minecraft Service using Inlets Operator
+minecraft_public_loadbalancer = public_loadbalancer(
+    minecraft_namespace,
+    helm_release,
+    k8s_provider
 )
 
 # Metadata Collection and Export

@@ -27,6 +27,7 @@ secret_key = k8s_secret_inlets_secrets(
 # Helm Release Configuration
 helm_release = deploy_helm_release(
     namespace,
+    secret_key,
     const.INLETS_OPERATOR_CONFIGURATION,
     k8s_provider
 )

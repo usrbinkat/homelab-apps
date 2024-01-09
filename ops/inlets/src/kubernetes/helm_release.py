@@ -30,7 +30,7 @@ def k8s_secret_inlets_secrets(namespace, provider):
     inlets_access_key_encoded = inlets_access_key_output.apply(encode_secret_value)
 
     inlets_license_secret = kubernetes.core.v1.Secret(
-        "inlets-license",
+        "inlets-pro-license",
         metadata=kubernetes.meta.v1.ObjectMetaArgs(
             name="inlets-license",
             namespace=namespace.metadata.name,
@@ -61,7 +61,7 @@ def k8s_secret_inlets_secrets(namespace, provider):
             labels=const.NAMESPACE_LABELS
         ),
         type="Opaque",
-        data={'access-key': inlets_access_key_encoded},
+        data={'inlets-access-key': inlets_access_key_encoded},
         opts=pulumi.ResourceOptions(
             provider=provider,
             depends_on=[namespace],
@@ -69,7 +69,7 @@ def k8s_secret_inlets_secrets(namespace, provider):
         )
     )
 
-    return inlets_license_secret, inlets_access_key_secret
+    return inlets_access_key_secret
 
 def fetch_helm_repo_index(repo_url):
     """Fetch and parse index.yaml from a Helm repo."""
@@ -89,7 +89,7 @@ def get_latest_chart_version(repo_url, chart_name):
     latest_version = versions[0]['version']
     return latest_version
 
-def deploy_helm_release(namespace, helm_values, provider):
+def deploy_helm_release(namespace, secret_key, helm_values, provider):
     """Configure and deploy a Helm Release.
 
     Args:
@@ -111,12 +111,13 @@ def deploy_helm_release(namespace, helm_values, provider):
         'inlets-operator',
         chart='inlets-operator',
         version=latest_version,
+        name='inlets-operator',
         namespace=namespace.metadata.name,
         values=helm_values,
         repository_opts={'repo': repo_url},
         opts=pulumi.ResourceOptions(
             provider=provider,
-            depends_on=[namespace],
+            depends_on=[namespace, secret_key],
             custom_timeouts=const.CUSTOM_TIMEOUTS
         )
     )

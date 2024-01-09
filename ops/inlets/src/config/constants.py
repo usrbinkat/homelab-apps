@@ -17,7 +17,5 @@ CUSTOM_TIMEOUTS = pulumi.CustomTimeouts(
 INLETS_OPERATOR_CONFIGURATION = {
     "annotatedOnly": "true",
     "provider": "digitalocean",
-    "region": "sfo3",
-    "accessKeyFile": "/var/secrets/inlets/inlets-access-key",
-    "secretKeyFile": ""
+    "region": "sfo3"
 }

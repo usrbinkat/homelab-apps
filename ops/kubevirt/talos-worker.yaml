@@ -1,0 +1,144 @@
+apiVersion: kubevirt.io/v1
+kind: VirtualMachine
+metadata:
+  annotations:
+    app: c03-talos
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"kubevirt.io/v1","kind":"VirtualMachine","metadata":{"annotations":{"app":"c03-talos"},"labels":{"app":"talos"},"name":"c03-talos","namespace":"default"},"spec":{"dataVolumeTemplates":[{"metadata":{"name":"c03-talos-volume-vda-root"},"spec":{"pvc":{"accessModes":["ReadWriteMany"],"resources":{"requests":{"storage":"32G"}},"storageClassName":"truenas-optane-nfs"},"source":{"registry":{"url":"docker://quay.io/containercraft/talos/nocloud@sha256:4b68854f63b15fa2ebd57b53dc293ce17babb6a0f2d77373cdc30e964bb65ca3"}}}},{"metadata":{"name":"c03-talos-volume-vdb-data"},"spec":{"pvc":{"accessModes":["ReadWriteMany"],"resources":{"requests":{"storage":"64G"}},"storageClassName":"truenas-optane-nfs"},"source":{"blank":{}}}}],"runStrategy":"Always","template":{"metadata":{"labels":{"app":"talos"}},"spec":{"domain":{"clock":{"timer":{},"utc":{}},"cpu":{"model":"host-passthrough","threads":8},"devices":{"autoattachGraphicsDevice":false,"autoattachPodInterface":true,"autoattachSerialConsole":true,"disks":[{"cdrom":{"bus":"sata","readonly":true},"name":"cloudinitdisk"},{"bootOrder":1,"disk":{"bus":"virtio"},"name":"c03-talos-disk-vda-root"},{"disk":{"bus":"virtio"},"name":"c03-talos-disk-vdb-data"}],"interfaces":[{"bridge":{},"macAddress":"de:ad:00:03:be:af","model":"virtio","name":"eth0"}],"rng":{}},"resources":{"requests":{"devices.kubevirt.io/kvm":"1","memory":"32G"}}},"networks":[{"multus":{"networkName":"nadbr0"},"name":"eth0"}],"terminationGracePeriodSeconds":0,"volumes":[{"cloudInitNoCloud":{"networkData":"network:\n  version: 1\n  config:\n  - type: physical\n    name: eth0\n    subnets:\n      - type: dhcp\n  - type: physical\n    name: eth1\n    subnets:\n      - type: dhcp\n  #version: 2\n  #ethernets:\n  #  eth0:\n  #    dhcp4: true\n  #  eth1:\n  #    dhcp4: true\n","secretRef":{"name":"talos-controlplane-userdata"}},"name":"cloudinitdisk"},{"dataVolume":{"name":"c03-talos-volume-vda-root"},"name":"c03-talos-disk-vda-root"},{"dataVolume":{"name":"c03-talos-volume-vdb-data"},"name":"c03-talos-disk-vdb-data"}]}}}}
+    kubevirt.io/latest-observed-api-version: v1
+    kubevirt.io/storage-observed-api-version: v1alpha3
+  creationTimestamp: "2022-12-08T21:33:39Z"
+  generation: 1
+  labels:
+    app: talos
+  name: c03-talos
+  namespace: default
+  resourceVersion: "277270734"
+  uid: e9681071-5530-409b-b94b-e9a52073fc6b
+spec:
+  dataVolumeTemplates:
+  - metadata:
+      creationTimestamp: null
+      name: c03-talos-volume-vda-root
+    spec:
+      pvc:
+        accessModes:
+        - ReadWriteMany
+        resources:
+          requests:
+            storage: 32G
+        storageClassName: truenas-optane-nfs
+      source:
+        registry:
+          url: docker://quay.io/containercraft/talos/nocloud@sha256:4b68854f63b15fa2ebd57b53dc293ce17babb6a0f2d77373cdc30e964bb65ca3
+  - metadata:
+      creationTimestamp: null
+      name: c03-talos-volume-vdb-data
+    spec:
+      pvc:
+        accessModes:
+        - ReadWriteMany
+        resources:
+          requests:
+            storage: 64G
+        storageClassName: truenas-optane-nfs
+      source:
+        blank: {}
+  runStrategy: Always
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: talos
+    spec:
+      domain:
+        clock:
+          timer: {}
+          utc: {}
+        cpu:
+          model: host-passthrough
+          threads: 8
+        devices:
+          autoattachGraphicsDevice: false
+          autoattachPodInterface: true
+          autoattachSerialConsole: true
+          disks:
+          - cdrom:
+              bus: sata
+              readonly: true
+            name: cloudinitdisk
+          - bootOrder: 1
+            disk:
+              bus: virtio
+            name: c03-talos-disk-vda-root
+          - disk:
+              bus: virtio
+            name: c03-talos-disk-vdb-data
+          interfaces:
+          - bridge: {}
+            macAddress: de:ad:00:03:be:af
+            model: virtio
+            name: eth0
+          rng: {}
+        machine:
+          type: q35
+        resources:
+          requests:
+            devices.kubevirt.io/kvm: "1"
+            memory: 32G
+      networks:
+      - multus:
+          networkName: nadbr0
+        name: eth0
+      terminationGracePeriodSeconds: 0
+      volumes:
+      - cloudInitNoCloud:
+          networkData: |
+            network:
+              version: 1
+              config:
+              - type: physical
+                name: eth0
+                subnets:
+                  - type: dhcp
+              - type: physical
+                name: eth1
+                subnets:
+                  - type: dhcp
+              #version: 2
+              #ethernets:
+              #  eth0:
+              #    dhcp4: true
+              #  eth1:
+              #    dhcp4: true
+          secretRef:
+            name: talos-controlplane-userdata
+        name: cloudinitdisk
+      - dataVolume:
+          name: c03-talos-volume-vda-root
+        name: c03-talos-disk-vda-root
+      - dataVolume:
+          name: c03-talos-volume-vdb-data
+        name: c03-talos-disk-vdb-data
+status:
+  conditions:
+  - lastProbeTime: "2023-07-30T18:45:30Z"
+    lastTransitionTime: "2023-07-30T18:45:30Z"
+    message: Guest VM is not reported as running
+    reason: GuestNotRunning
+    status: "False"
+    type: Ready
+  created: true
+  printableStatus: Starting
+  volumeSnapshotStatuses:
+  - enabled: false
+    name: cloudinitdisk
+    reason: Snapshot is not supported for this volumeSource type [cloudinitdisk]
+  - enabled: false
+    name: c03-talos-disk-vda-root
+    reason: 'No VolumeSnapshotClass: Volume snapshots are not configured for this
+      StorageClass [truenas-optane-nfs] [c03-talos-disk-vda-root]'
+  - enabled: false
+    name: c03-talos-disk-vdb-data
+    reason: 'No VolumeSnapshotClass: Volume snapshots are not configured for this
+      StorageClass [truenas-optane-nfs] [c03-talos-disk-vdb-data]'

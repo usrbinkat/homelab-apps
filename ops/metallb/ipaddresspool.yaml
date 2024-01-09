@@ -1,8 +1,8 @@
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool
 metadata:
-  name: 192.168.1.3x
+  name: 2x
   namespace: metallb
 spec:
   addresses:
-  - 192.168.1.31-192.168.1.39
+  - 192.168.1.22-192.168.1.29

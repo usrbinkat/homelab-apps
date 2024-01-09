@@ -5,6 +5,17 @@ metadata:
   namespace: kubevirt
 spec:
   configuration:
+    smbios:
+      family: AODS
+      manufacturer: Microsoft
+      product: NetworkCloud
+      sku: aods-nc
+      version: v0.51.0
+      #family: Kargo
+      #manufacturer: ContainerCraft
+      #product: "Kargo Kubevirt Private Cloud"
+      #sku: ccioKargo
+      #version: v0.58.0
     developerConfiguration:
       featureGates:
         - HostDevices

@@ -1,0 +1,6 @@
+name: inlets-operator
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: A pulumi python program to deploy inlets-operator from helm chart

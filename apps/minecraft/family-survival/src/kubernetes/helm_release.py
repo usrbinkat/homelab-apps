@@ -117,7 +117,8 @@ def public_loadbalancer(namespace, helm_release, provider):
             selector={"app": app_label},
             ports=[kubernetes.core.v1.ServicePortArgs(
                 name="minecraft",
-                port=25565,
+                port=32767,
+                target_port=25565,
                 protocol="TCP"
             )]
         ),

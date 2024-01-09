@@ -14,7 +14,7 @@ MINECRAFT_SERVER_CONFIGURATION = {
     "levelSeed": "-8969774262643053512",
     "motd": "Eli Morgan's Family & Friends Minecraft World!",
     "ops": "usrbinkat, gardengnomegal8",
-    "whitelist": "usrbinkat, gardengnomegal8, microbeaster, paddyjohn",
+    "whitelist": "usrbinkat, gardengnomegal8, microbeaster, paddyjohn, SupineCave63953",
     "overrideServerProperties": True,
     "maxWorldSize": 100000,
     "forcegameMode": True,

@@ -35,12 +35,12 @@ services:
     volumes:
       - unifi-config:/config
     ports:
-      - "8443:8443"
-      - "3478:3478/udp"
-      - "10001:10001/udp"
-      - "8080:8080"
-      - "1900:1900/udp"
-      - "5514:5514/udp"
+      - "${UNIFI_BIND_IP:-0.0.0.0}:8443:8443"
+      - "${UNIFI_BIND_IP:-0.0.0.0}:3478:3478/udp"
+      - "${UNIFI_BIND_IP:-0.0.0.0}:10001:10001/udp"
+      - "${UNIFI_BIND_IP:-0.0.0.0}:8080:8080"
+      - "${UNIFI_BIND_IP:-0.0.0.0}:1900:1900/udp"
+      - "${UNIFI_BIND_IP:-0.0.0.0}:5514:5514/udp"
     restart: unless-stopped
 
 volumes:
